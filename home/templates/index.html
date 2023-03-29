@@ -4,29 +4,51 @@
 
 {% block content %}
   <div class="jumbotron">
-    <h1>Welcome to the Coffee Bean Shop</h1>
+    <h1>Welcome to the Coffee Now</h1>
     <p>Here at the Coffee Bean Shop, we offer a wide variety of high-quality coffee beans from around the world.</p>
     <p>Take a look at our selection and place an order today!</p>
   </div>
 
   <div class="container">
-    <h2>Our Selection</h2>
-    <div class="row">
-      {% for coffee in coffees %}
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="{{ coffee.image_url }}" alt="{{ coffee.name }}">
-            <div class="card-body">
-              <h4>{{ coffee.name }}</h4>
-              <p class="card-text">{{ coffee.description }}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="price">${{ coffee.price }}</span>
-                <a href="{% url 'order' coffee.id %}" class="btn btn-sm btn-outline-primary">Order Now</a>
-              </div>
-            </div>
+      <div class="row featurette">
+          <div class="col-md-7">
+              <p>
+                  Coffee Now is a small-scale, specialty coffee roaster that places a strong emphasis on quality,
+                  sustainability, and transparency.
+              </p>
           </div>
-        </div>
-      {% endfor %}
-    </div>
+          <div class="col-md-5">
+              <img class="featurette-image image-responsive" src="media/images/pexels-eyad-tariq-3879495.jpg"
+                  alt="coffee">
+          </div>
+      </div>
+      <div class="container">
+          <div class="row featurette">
+              <div class="col-md-5">
+                  <img class="featurette-image image-responsive" src="media/images/pexels-eyad-tariq-3879495.jpg"
+                      alt="coffee">
+              </div>
+          </div>
+          <div class="col-md-7">
+              <p>
+                  Coffee Now is a small-scale, specialty coffee roaster that places a strong emphasis on quality,
+                  sustainability, and transparency.
+              </p>
+          </div>
+      </div>
+      <div class="row featurette">
+          <div class="col-md-7">
+              <p>
+                  Coffee Now is a small-scale, specialty coffee roaster that places a strong emphasis on quality,
+                  sustainability, and transparency.
+              </p>
+          </div>
+          <div class="col-md-5">
+              <img class="featurette-image image-responsive" src="media/images/pexels-eyad-tariq-3879495.jpg"
+                  alt="coffee">
+          </div>
+      </div>
   </div>
+         
+    
 {% endblock %}
