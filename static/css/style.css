@@ -15,6 +15,21 @@ h1 {
     font-family: MuseoModerno, sans-serif;
 }
 
+/* Header Styling */
+
+.nav-title{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.nav-item{
+    justify-content: space-between;
+    font-size: 20px;
+    margin-left: 4rem;
+    display: flex;
+}
+
  /* Footer Styling */
 
 .footer-container {
@@ -40,4 +55,17 @@ h1 {
 
 .list-inline a:hover{
     text-decoration: none;
+}
+
+
+/* Home Page Styling */
+
+.intro-text{
+    margin-left: 4rem;
+}
+
+.img-sm{
+    height: 70%;
+    width: 70%;
+    padding-left: 6rem;
 }
