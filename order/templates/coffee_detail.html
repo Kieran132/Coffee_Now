@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="card-img-top" src="{{ coffee.image.url }}" alt="{{ coffee.name }}">
+      </div>
+      <div class="col-md-6">
+        <h1>{{ coffee.name }}</h1>
+        <hr>
+        <p>{{ coffee.description }}</p>
+        <h3>Details:</h3>
+        <ul class="list-unstyled">
+          <li><strong>Roasting Level:</strong> {{ coffee.roasting_level }}</li>
+          <li><strong>Flavor Profile:</strong> {{ coffee.flavor_profile }}</li>
+          <li><strong>Price:</strong> {{ coffee.price }}</li>
+        </ul>
+        <a href="{% url 'coffee_list' %}" class="btn btn-outline-secondary">Back to Coffee List</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
