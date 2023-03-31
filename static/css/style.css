@@ -17,13 +17,26 @@ h1 {
 
  /* Footer Styling */
 
- .footer-container {
+.footer-container {
     margin: 0 auto;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
-  }
+}
+
+.footer-social{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin-right: 2.3rem;
+    letter-spacing: 60px;
+    font-size: 20px;
+}
+
+.footer-social li a{
+    color: white;
+}
 
 .list-inline a:hover{
     text-decoration: none;
