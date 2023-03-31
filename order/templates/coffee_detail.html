@@ -14,7 +14,8 @@
         <ul class="list-unstyled">
           <li><strong>Roasting Level:</strong> {{ coffee.roasting_level }}</li>
           <li><strong>Flavor Profile:</strong> {{ coffee.flavor_profile }}</li>
-          <li><strong>Price:</strong> {{ coffee.price }}</li>
+          <li><strong>Strength Level:</strong> {{ coffee.strength_level }}</li>
+          <li><strong>Price:</strong> £{{ coffee.price }}</li>
         </ul>
         <a href="{% url 'coffee_list' %}" class="btn btn-outline-secondary">Back to Coffee List</a>
       </div>
