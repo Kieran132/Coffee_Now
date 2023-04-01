@@ -5,13 +5,16 @@
     <h1>Coffee Accessories</h1>
     <div class="row">
       {% for accessory in accessories %}
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="{{ accessory.image_url }}" class="card-img-top" alt="{{ accessory.name }}">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img src="{{ accessory.image.url }}" class="card-img-top" alt="{{ accessory.name }}">
             <div class="card-body">
               <h5 class="card-title">{{ accessory.name }}</h5>
               <p class="card-text">{{ accessory.description }}</p>
-              <a href="{{ accessory.url }}" class="btn btn-primary">View Product</a>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="btn btn-sm btn-outline-secondary">Add to Wishlist</a>
+                <small class="text-muted">£{{ accessory.price }}</small>
+              </div>
             </div>
           </div>
         </div>

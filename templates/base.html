@@ -34,11 +34,23 @@
             <a class="nav-link" href="{% url 'coffee_list'%}">Order</a>
           </li>
           <li class="nav-item {% if request.path == '/menu/' %}active{% endif %}">
-            <a class="nav-link" href="#">Accessories</a>
+            <a class="nav-link" href="{% url 'coffee_accessories' %}">Accessories</a>
           </li>
           <li class="nav-item {% if request.path == '/contact/' %}active{% endif %}">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
           </li>
+          {% if user.is_authenticated %}
+          <li class="nav-item">
+              <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+              <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+          </li>
+          {% endif %}
         </ul>
       </div>
     </div>
