@@ -69,3 +69,11 @@ h1 {
     width: 70%;
     padding-left: 6rem;
 }
+
+
+/* Contact Page Styling */
+
+#map {
+    height: 400px;
+    width: 100%; 
+}
