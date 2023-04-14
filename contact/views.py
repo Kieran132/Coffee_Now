@@ -11,6 +11,7 @@ def contact(request):
         name = request.POST['name']
         email = request.POST['email']
         message = request.POST['message']
+        print("This is name:", name)
         print("This is message:", message)
         print("This is email:", email)
 
@@ -18,7 +19,7 @@ def contact(request):
             'Contact Form Submission from {}'.format(name),
             message,
             email,
-            ['banginburgers23@gmail.com'],
+            ['kiemclean@hotmail.co.uk'],
             fail_silently=False,
         )
     return render(request, 'contact.html')
