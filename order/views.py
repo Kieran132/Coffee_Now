@@ -1,5 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from .models import CoffeeBean
+from .forms import BeanForm
 
 
 def coffee_list(request):
@@ -10,4 +13,28 @@ def coffee_list(request):
 
 def coffee_detail(request, id):
     coffee = get_object_or_404(CoffeeBean, pk=id)
-    return render(request, 'coffee_detail.html', {'coffee': coffee})
+    form = BeanForm()
+
+    context = {
+        'coffee': coffee,
+        'form': form
+    }
+    return render(request, 'coffee_detail.html', context)
+
+
+@login_required
+def add_product(request):
+    form = BeanForm()
+    if request.method == 'POST':
+        form = BeanForm(request.POST, request.FILES)
+        print("errors in form", form.errors)
+        if form.is_valid():
+            print("Form submitted")
+            form.save()
+            return redirect('coffee_list')
+        else:
+            messages.error(
+                request,
+                'Error adding product, please check the the form is valid')
+        
+    return render(request, 'add_product.html', {'form': form})

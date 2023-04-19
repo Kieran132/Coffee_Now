@@ -4,11 +4,22 @@
   <div class="container mt-5">
     <h1>Coffee Beans</h1>
     <hr>
+    {% if request.user.is_superuser %}
+    <a class="btn btn-sm btn-outline-secondary" href="{% url 'add_product'%}">Add</a>
+{% endif %}
     <div class="row">
       {% for coffee in coffee_beans %}
         <div class="col-md-4">
           <div class="card mb-4 box-shadow">
-            <img class="card-img-top" src="{{ coffee.image.url }}" alt="{{ coffee.name }}">
+            {% if coffee.image %}
+            <a>
+              <img class="card-img-top" src="{{ coffee.image.url }}" alt="{{ coffee.name }}">
+            </a>
+            {% else %}
+            <a>
+              <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}coffee.jpg " alt=" {{ coffee.name }}">
+            </a>
+            {% endif %}
             <div class="card-body">
               <h5 class="card-title">{{ coffee.name }}</h5>
               <p class="card-text">{{ coffee.description }}</p>
