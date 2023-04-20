@@ -62,3 +62,4 @@ def edit_product(request, coffee_id):
     }
        
     return render(request, 'edit_product.html', context)
+
