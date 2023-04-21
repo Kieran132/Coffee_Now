@@ -63,3 +63,9 @@ def edit_product(request, coffee_id):
        
     return render(request, 'edit_product.html', context)
 
+
+@login_required
+def delete_product(request, id):
+    coffee_beans = CoffeeBean.objects.get(id=id)
+    coffee_beans.delete()
+    return redirect('coffee_list')
