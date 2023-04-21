@@ -25,8 +25,6 @@ def add_product_b(request):
             messages.error(
                 request,
                 'Error adding product, please check the the form is valid') 
-    else:
-        form = AccessoryForm()   
     return render(request, 'add_product_b.html', {'form': form})
 
 
