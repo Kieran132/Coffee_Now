@@ -51,3 +51,10 @@ def edit_product_b(request, accessory_id):
         'accessory': accessory
     }  
     return render(request, 'edit_product_b.html', context)
+
+
+@login_required
+def delete_product(request, id):
+    accessory = Accessory.objects.get(id=id)
+    accessory.delete()
+    return redirect('coffee_accessories')
