@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>My Wishlist</h1>
+<ul>
+{% for item in wishlist %}
+{% if item.coffee %}
+<li>{{ item.coffee.name }}</li>
+{% elif item.accessory %}
+<li>{{ item.accessory.name }}</li>
+{% endif %}
+{% endfor %}
+</ul>
+{% endblock %}

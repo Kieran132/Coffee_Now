@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'home',
     'accessories',
     'contact',
+    'wishlist',
 ]
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
