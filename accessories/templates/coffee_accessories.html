@@ -1,31 +1,34 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div class="container">
-    <h1>Coffee Accessories</h1>
-    {% if request.user.is_superuser %}
-    <a class="btn btn-sm btn-outline-secondary" href="{% url 'add_product_b' %}">Add</a>
-    {% endif %}
-    <div class="row">
-      {% for accessory in accessories %}
-      <div class="col-md-4">
-        <div class="card mb-4 box-shadow">
-          <img src="{{ accessory.image.url }}" class="card-img-top" alt="{{ accessory.name }}">
-          <div class="card-body">
-            <h5 class="card-title">{{ accessory.name }}</h5>
-            <p class="card-text">{{ accessory.description }}</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <a href="#" class="btn btn-sm btn-outline-secondary">Add to Wishlist</a>
-              {% if request.user.is_superuser %}
-              <a class="btn btn-sm btn-outline-secondary" href="{% url 'edit_product_b' accessory.id %}">Edit</a>
-              <a class="btn btn-sm btn-outline-secondary" href="{% url 'delete_product' accessory.id %}">Delete</a>
-              {% endif %}
-              <small class="text-muted">£{{ accessory.price }}</small>
-            </div>
+<div class="container">
+  <h1>Coffee Accessories</h1>
+  {% if request.user.is_superuser %}
+  <a class="btn btn-sm btn-outline-secondary" href="{% url 'add_product_b' %}">Add</a>
+  {% endif %}
+  <div class="row">
+    {% for accessory in accessories %}
+    <div class="col-md-4">
+      <div class="card mb-4 box-shadow">
+        <img src="{{ accessory.image.url }}" class="card-img-top" alt="{{ accessory.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ accessory.name }}</h5>
+          <p class="card-text">{{ accessory.description }}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            {% if request.user.is_authenticated %}
+            <a href="{% url 'add_accessory_to_wishlist' accessory_id=accessory.id %}"
+              class="btn btn-sm btn-outline-secondary">Add to Wishlist</a>
+            {% endif %}
+            {% if request.user.is_superuser %}
+            <a class="btn btn-sm btn-outline-secondary" href="{% url 'edit_product_b' accessory.id %}">Edit</a>
+            <a class="btn btn-sm btn-outline-secondary" href="{% url 'delete_product' accessory.id %}">Delete</a>
+            {% endif %}
+            <small class="text-muted">£{{ accessory.price }}</small>
           </div>
         </div>
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
   </div>
+</div>
 {% endblock %}

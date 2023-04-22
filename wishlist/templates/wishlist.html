@@ -21,24 +21,20 @@
                                 </div>
                             </div>
                         </div>
-                    {% elif item.accessory %}
+                    {% elif item.Accessory %}
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="card mb-4 box-shadow">
-                                {% if item.accessory.image %}
                                     <a>
-                                        <img class="card-img-top" src="{{ item.accessory.image.url }}" alt="{{ item.accessory.name }}">
+                                        <img class="card-img-top" src="{{ item.Accessory.image.url }}" alt="{{ item.Accessory.name }}">
                                     </a>
-                                {% else %}
-                                    <a>
-                                        <img class="card-img-top img-fluid" src="#" alt=" {{ item.accessory.name }}">
-                                    </a>
-                                {% endif %}
                                 <div class="card-body">
-                                    <h5 class="card-title">{{ item.accessory.name }}</h5>
-                                    <small class="text-muted">£{{ item.accessory.price }}</small>
+                                    <h5 class="card-title">{{ item.Accessory.name }}</h5>
+                                    <small class="text-muted">£{{ item.Accessory.price }}</small>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     {% endif %}
                 {% endfor %}
             </div>
