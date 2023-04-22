@@ -1,14 +1,47 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>My Wishlist</h1>
-<ul>
-{% for item in wishlist %}
-{% if item.coffee %}
-<li>{{ item.coffee.name }}</li>
-{% elif item.accessory %}
-<li>{{ item.accessory.name }}</li>
-{% endif %}
-{% endfor %}
-</ul>
+    <div class="container mt-5">
+        <h1>My Wishlist</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                {% for item in wishlist %}
+                    {% if item.CoffeeBean %}
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4 box-shadow">
+                                        <a>
+                                            <img class="card-img-top" src="{{ item.CoffeeBean.image.url }}" alt="{{ item.CoffeeBean.name }}">
+                                        </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ item.CoffeeBean.name }}</h5>
+                                        <small class="text-muted">£{{ item.CoffeeBean.price }}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% elif item.accessory %}
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                {% if item.accessory.image %}
+                                    <a>
+                                        <img class="card-img-top" src="{{ item.accessory.image.url }}" alt="{{ item.accessory.name }}">
+                                    </a>
+                                {% else %}
+                                    <a>
+                                        <img class="card-img-top img-fluid" src="#" alt=" {{ item.accessory.name }}">
+                                    </a>
+                                {% endif %}
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ item.accessory.name }}</h5>
+                                    <small class="text-muted">£{{ item.accessory.price }}</small>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
