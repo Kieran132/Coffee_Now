@@ -9,6 +9,7 @@ body{
     font-family: Oxygen, sans-serif;
     font-weight: 400;
     padding-bottom: 60px;
+    background-color: #F8F6F4;
 }
 
 h1 {
@@ -17,11 +18,10 @@ h1 {
 
 /* Header Styling */
 
-.nav-title{
-    color: white;
+.navbar-dark .nav-title{
+    color: #3F2929;
     font-size: 2.5rem;
     font-family: MuseoModerno, sans-serif;
-    float: right;
 }
 
 .nav-item{
@@ -31,12 +31,18 @@ h1 {
     display: flex;
 }
 
+.navbar-dark .navbar-nav .active>.nav-link{
+    color: #3F2929;
+    text-decoration: none;
+
+}
+
 .navbar-dark .navbar-nav .coffee-nav-link{
-    color: white;
+    color: #3F2929;
 }
 
 .coffee-nav{
-    background: linear-gradient(to right, #3F2929, #4F4F4F);
+    background-color: #BFBFBF;
 }
 
  /* Footer Styling */
@@ -45,7 +51,7 @@ h1 {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: #3F2929;
 }
 
 .footer-social{
@@ -59,7 +65,7 @@ h1 {
 }
 
 .footer-social li a{
-    color: white;
+    color: #3F2929;
 }
 
 .list-inline a:hover{
@@ -67,7 +73,11 @@ h1 {
 }
 
 .coffee-footer{
-    background: linear-gradient(to right, #3F2929, #4F4F4F);
+    background-color: #BFBFBF;
+}
+
+.text-muted{
+    color: #3F2929;
 }
 
 
