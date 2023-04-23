@@ -3,6 +3,7 @@
 {% block content %}
 <div class="container">
   <h1>Coffee Accessories</h1>
+  <hr>
   {% if request.user.is_superuser %}
   <a class="btn btn-sm btn-outline-secondary" href="{% url 'add_product_b' %}">Add</a>
   {% endif %}
