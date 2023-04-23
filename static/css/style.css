@@ -21,6 +21,7 @@ hr {
     color: #4F4F4F   ;
 }
 
+
 /* Header Styling */
 
 .navbar-dark .nav-title{
@@ -49,6 +50,7 @@ hr {
 .coffee-nav{
     background-color: #BFBFBF;
 }
+
 
  /* Footer Styling */
 
@@ -79,9 +81,10 @@ hr {
 
 .coffee-footer{
     background-color: #BFBFBF;
+    padding-top: 10px;
 }
 
-.text-muted{
+.copyright{
     color: #3F2929;
 }
 
@@ -92,6 +95,7 @@ hr {
     height: 70%;
     width: 70%;
 }
+
 .intro-text {
     margin-top: 50px;
 }
@@ -102,7 +106,8 @@ hr {
 
 .intro-text img {
     margin-bottom: 30px;
-  }
+}
+
 
 /* Contact Page Styling */
 
