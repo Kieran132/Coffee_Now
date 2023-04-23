@@ -10,10 +10,15 @@ body{
     font-weight: 400;
     padding-bottom: 60px;
     background-color: #F8F6F4;
+    color: #AF7A49;
 }
 
 h1 {
     font-family: MuseoModerno, sans-serif;
+}
+
+hr {
+    color: #4F4F4F   ;
 }
 
 /* Header Styling */
@@ -83,16 +88,21 @@ h1 {
 
 /* Home Page Styling */
 
-.intro-text{
-    margin-left: 4rem;
-}
-
 .img-sm{
     height: 70%;
     width: 70%;
-    padding-left: 6rem;
+}
+.intro-text {
+    margin-top: 50px;
 }
 
+.intro-text p {
+    margin-bottom: 30px;
+}
+
+.intro-text img {
+    margin-bottom: 30px;
+  }
 
 /* Contact Page Styling */
 
