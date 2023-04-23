@@ -6,10 +6,10 @@
         <hr>
         <div class="row">
             <div class="col-md-6">
-                <div class="row"> <!-- moved row class here -->
+                <div class="row"> 
                 {% for item in wishlist %}
                     {% if item.CoffeeBean %}
-                            <div class="col-md-4"> <!-- added column class here -->
+                            <div class="col-md-4"> 
                                 <div class="card mb-4 box-shadow">
                                     <a>
                                         <img class="card-img-top" src="{{ item.CoffeeBean.image.url }}" alt="{{ item.CoffeeBean.name }}">
@@ -17,11 +17,13 @@
                                     <div class="card-body">
                                         <h5 class="card-title">{{ item.CoffeeBean.name }}</h5>
                                         <small class="text-muted">£{{ item.CoffeeBean.price }}</small>
+                                        <hr>
+                                        <a class="btn btn-sm btn-outline-secondary" href="#">Delete</a>
                                     </div>
                                 </div>
                             </div>
                     {% elif item.Accessory %}
-                            <div class="col-md-4"> <!-- added column class here -->
+                            <div class="col-md-4"> 
                                 <div class="card mb-4 box-shadow">
                                     <a>
                                         <img class="card-img-top" src="{{ item.Accessory.image.url }}" alt="{{ item.Accessory.name }}">
@@ -29,12 +31,14 @@
                                     <div class="card-body">
                                         <h5 class="card-title">{{ item.Accessory.name }}</h5>
                                         <small class="text-muted">£{{ item.Accessory.price }}</small>
+                                        <hr>
+                                        <a class="btn btn-sm btn-outline-secondary" href="#">Delete</a>
                                     </div>
                                 </div>
                             </div>
                     {% endif %}
                 {% endfor %}
-                </div> <!-- end of row -->
+                </div> 
             </div>
         </div>
     </div>
