@@ -18,7 +18,7 @@
                                         <h5 class="card-title">{{ item.CoffeeBean.name }}</h5>
                                         <small class="text-muted">£{{ item.CoffeeBean.price }}</small>
                                         <hr>
-                                        <a class="btn btn-sm btn-outline-secondary" href="#">Delete</a>
+                                        <a class="btn btn-sm btn-outline-secondary" href="{% url 'wishlist-delete' item.id %}">Delete</a>
                                     </div>
                                 </div>
                             </div>
@@ -32,7 +32,7 @@
                                         <h5 class="card-title">{{ item.Accessory.name }}</h5>
                                         <small class="text-muted">£{{ item.Accessory.price }}</small>
                                         <hr>
-                                        <a class="btn btn-sm btn-outline-secondary" href="#">Delete</a>
+                                        <a class="btn btn-sm btn-outline-secondary" href="{% url 'wishlist-delete' item.id %}">Delete</a>
                                     </div>
                                 </div>
                             </div>

@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import add_to_wishlist, wishlist
+from .views import add_to_wishlist, wishlist, wishlist_delete
 
 urlpatterns = [
     path(
@@ -9,4 +9,7 @@ urlpatterns = [
         'wishlist/add/accessory/<int:accessory_id>/',
         add_to_wishlist, name='add_accessory_to_wishlist'),
     path('wishlist/', wishlist, name='wishlist'),
+    path(
+        'wishlist/delete/<int:item_id>/',
+        wishlist_delete, name='wishlist-delete'),
 ]
