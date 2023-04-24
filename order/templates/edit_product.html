@@ -3,6 +3,7 @@
 {% block content %}
 <div class="container">
     <h1 class="text-center mb-4">Edit a product</h1>
+    <hr>
     <form method="post" action="{% url 'edit_product' coffee.id %}" enctype="multipart/form-data">
         {% csrf_token %}
         <div class="row mb-3">
