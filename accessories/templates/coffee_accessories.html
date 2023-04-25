@@ -2,14 +2,14 @@
 
 {% block content %}
 <div class="container">
-  <h1>Coffee Accessories</h1>
+  <h1 class="acc-title">Coffee Accessories</h1>
   <hr>
   {% if request.user.is_superuser %}
   <a class="btn btn-sm btn-outline-secondary acc-add-btn" href="{% url 'add_product_b' %}">Add</a>
   {% endif %}
   <div class="row">
     {% for accessory in accessories %}
-    <div class="col-md-4">
+    <div class=" acc-box-sm">
       <div class="card mb-4 box-shadow acc-box">
         <img src="{{ accessory.image.url }}" class="card-img-top acc-img" alt="{{ accessory.name }}">
         <div class="card-body acc-card-body">

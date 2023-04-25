@@ -2,18 +2,24 @@
 
 {% block content %}
     <div class="container mt-5">
-        <h1>My Wishlist</h1>
+        <h1 class="wish-title">My Wishlist</h1>
         <hr>
         <div class="row">
             <div class="col-md-6">
                 <div class="row"> 
                 {% for item in wishlist %}
                     {% if item.CoffeeBean %}
-                            <div class="col-md-4"> 
-                                <div class="card mb-4 box-shadow wish-box">
+                            <div class="wish-box-sm"> 
+                                <div class="card wish-box">
+                                    {% if item.CoffeeBean.image %}
                                     <a>
                                         <img class="card-img-top wish-img" src="{{ item.CoffeeBean.image.url }}" alt="{{ item.CoffeeBean.name }}">
                                     </a>
+                                    {% else %}
+                                    <a>
+                                        <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg " alt=" {{ coffee.name }}">
+                                    </a>
+                                    {% endif %}
                                     <div class="card-body wish-body">
                                         <h5 class="card-title wish-name">{{ item.CoffeeBean.name }}</h5>
                                         <hr>
@@ -24,11 +30,17 @@
                                 </div>
                             </div>
                     {% elif item.Accessory %}
-                            <div class="col-md-4"> 
-                                <div class="card mb-4 box-shadow wish-box">
+                            <div class="wish-box-sm"> 
+                                <div class="card wish-box">
+                                    {% if item.Accessory.image %}
                                     <a>
                                         <img class="card-img-top wish-img" src="{{ item.Accessory.image.url }}" alt="{{ item.Accessory.name }}">
                                     </a>
+                                    {% else %}
+                                    <a>
+                                        <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg " alt=" {{ coffee.name }}">
+                                    </a>
+                                    {% endif %}
                                     <div class="card-body wish-body">
                                         <h5 class="card-title wish-name">{{ item.Accessory.name }}</h5>
                                         <hr>

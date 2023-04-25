@@ -205,11 +205,10 @@ hr {
 
 .wish-box{
     height: 100%;
-    width: 15rem;
 }
 
 .wish-img{
-    height: 15rem
+    height: 10rem
 }
 
 .wish-body{
@@ -285,6 +284,35 @@ hr {
         
     }
 
+    .coffee-detail-btn{
+        margin-top: 5px;
+    }
+
+    /* Accessories styling */
+
+    .acc-title{
+        justify-content: center;
+        display: flex;
+    }
+
+    .acc-box-sm{
+        margin-bottom: 10px;
+        margin-right: 4rem;
+    }
+
+    /* Wishlist styling */
+
+    .wish-title{
+        justify-content: center;
+        display: flex;
+    }
+
+    .wish-box-sm{
+        margin-top: 10px;
+        margin-left: 2.8rem;
+    }
+
+
 }
 
 
@@ -309,12 +337,38 @@ hr {
         margin-bottom: 5px;
     }
 
-    /* Coffee-detail styling */
+    /* Accessories styling */
+
+    .acc-title{
+        justify-content: center;
+        display: flex;
+    }
+
+    .acc-box-sm{
+        margin-bottom: 10px;
+        margin-left: 0.6rem;
+    }
+
+    /* Wishlist styling */
+
+    .wish-title{
+        justify-content: center;
+        display: flex;
+    }
+
+    .wish-box-sm{
+        width: 30rem;
+        display: flex; 
+        flex: 0 0 30%;
+        margin-left: 5px;
+        margin-top: 5px;   
+    }
+
 }
 
 /* Screen sizes from to 420px */
 
-@media only screen and (min-width: 420px) and (max-width: 539px) {
+@media only screen and (min-width: 420px) and (max-width: 540px) {
 
     /* NavBar, Footer and Index.html styling */
     .copyright {
@@ -333,13 +387,38 @@ hr {
         margin-bottom: 5px;
     }
 
-    /* Coffee-detail styling */
+    /* Accessories styling */
+
+    .acc-title{
+        justify-content: center;
+        display: flex;
+    }
+
+    .acc-box-sm{
+        margin-left: 5rem;
+        margin-bottom: 10px;
+    }
+
+     /* Wishlist styling */
+
+     .wish-title{
+        justify-content: center;
+        display: flex;
+    }
+
+    .wish-box-sm{
+        width: 30rem;
+        display: flex; 
+        flex: 0 0 30%;
+        margin-left: 5px;
+        margin-top: 5px;   
+    }
 }
 
 
 /* Screen sizes from to 560px */
 
-@media only screen and (min-width: 540px) and (max-width: 819px) {
+@media only screen and (min-width: 541px) and (max-width: 819px) {
 
     /* NavBar, Footer and Index.html styling */
     .copyright {
@@ -360,13 +439,55 @@ hr {
         margin-left: 3.1rem;
     }
 
-    /* Coffee-detail styling */
+    /* Accessories styling */
+
+    .acc-box-sm{
+        flex: 30%;
+        margin-left: 10px;
+    }
+
+     /* Wishlist styling */
+
+     .wish-title{
+        justify-content: center;
+        display: flex;
+    }
+
+    .wish-box-sm{
+        width: 30rem;
+        display: flex; 
+        flex: 0 0 50%;      
+    }
+
+    
 }
 
 @media only screen and (min-width: 820px) and (max-width: 991px){
+
     .coffee-card {
         margin-bottom: 5px;
     }
+
+    /* Accessories styling */
+
+    .acc-box-sm{
+        flex: 30%;
+        margin-left: 10px;
+    }
+
+    /* Wishlist styling */
+
+    .wish-title{
+        justify-content: center;
+        display: flex;
+    }
+
+    .wish-box-sm{
+        width: 30rem;
+        display: flex; 
+        flex: 0 0 50%;      
+    }
+
 
 }
 
@@ -380,4 +501,31 @@ hr {
         margin-right: 10px;
         margin-left: 10px;
       }
+
+     /* Accessories styling */
+
+    .acc-title{
+        justify-content: center;
+        display: flex;
+    }
+
+    .acc-box-sm{
+        margin-left: 5rem;
+        margin-bottom: 10px;
+    }
+
+    /* Wishlist styling */
+
+    .wish-title{
+        justify-content: center;
+        display: flex;
+    }
+    
+    .wish-box-sm{
+        width: 30rem;
+        display: flex; 
+        flex: 30%;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
 }
