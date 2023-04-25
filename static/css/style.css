@@ -201,6 +201,37 @@ hr {
     margin-left: 3px;
 }
 
+/* Wishlist Product page styling */
+
+.wish-box{
+    height: 100%;
+    width: 15rem;
+}
+
+.wish-img{
+    height: 15rem
+}
+
+.wish-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.wish-name{
+    text-decoration: underline solid;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wish-price{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
 /* Media Queries */
 
 /* Screen sizes from to 280px */
