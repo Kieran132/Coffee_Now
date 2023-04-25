@@ -21,6 +21,10 @@ hr {
     color: #4F4F4F   ;
 }
 
+.buttonn:hover{
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 
 /* Header Styling */
 
@@ -129,11 +133,29 @@ hr {
     margin-bottom: 10px;
 }
 
+.coffee-list-name{
+    text-decoration: underline solid;
+    font-size: 1.3rem;
+}
+
+.coffee-list-card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.coffee-list-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
 /* Media Queries */
 
 /* Screen sizes from to 280px */
 
-@media only screen and (min-width: 280px) {
+@media only screen and (min-width: 280px) and (max-width: 379px) {
 
     /* NavBar, Footer and Index.html styling */
 
@@ -164,12 +186,30 @@ hr {
         margin-bottom: 5px;
     }
 
+    /* Coffee-detail styling */
+
+    .coffee-detail-img{
+        height: 18rem;
+        margin-bottom: 5px;
+    }
+
+    .coffee-detail-title{
+        justify-content: center;
+        display: flex;
+    }
+
+    .coffee-detail-sml-title{
+        font-size: 1.3rem;
+        text-decoration: underline solid;
+        
+    }
+
 }
 
 
 /* Push footer icons to centre on screen size from 380px */
 
-@media only screen and (min-width: 380px){
+@media only screen and (min-width: 380px) and (max-width: 419px){
 
     /* NavBar, Footer and Index.html styling */
     .footer-social{
@@ -177,16 +217,23 @@ hr {
         margin-left: 2.3rem;
     }
 
+    .copyright {
+        display: flex;
+        justify-content: center;
+    }
+
     /* Coffee-list styling */
 
     .coffee-card{
         margin-bottom: 5px;
     }
+
+    /* Coffee-detail styling */
 }
 
 /* Screen sizes from to 420px */
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 420px) and (max-width: 539px) {
 
     /* NavBar, Footer and Index.html styling */
     .copyright {
@@ -204,12 +251,14 @@ hr {
     .coffee-card{
         margin-bottom: 5px;
     }
+
+    /* Coffee-detail styling */
 }
 
 
 /* Screen sizes from to 560px */
 
-@media only screen and (min-width: 540px) and (max-width: 700px) {
+@media only screen and (min-width: 540px) and (max-width: 819px) {
 
     /* NavBar, Footer and Index.html styling */
     .copyright {
@@ -229,9 +278,11 @@ hr {
         width: 80%;
         margin-left: 3.1rem;
     }
+
+    /* Coffee-detail styling */
 }
 
-@media only screen and (min-width: 820px){
+@media only screen and (min-width: 820px) and (max-width: 991px){
     .coffee-card {
         margin-bottom: 5px;
     }

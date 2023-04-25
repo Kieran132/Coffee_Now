@@ -6,19 +6,19 @@
       <div class="col-md-6">
         {% if coffee.image %}
         <a>
-          <img class="card-img-top" src="{{ coffee.image.url }}" alt="{{ coffee.name }}">
+          <img class="card-img-top coffee-detail-img" src="{{ coffee.image.url }}" alt="{{ coffee.name }}">
         </a>
         {% else %}
         <a>
-          <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}coffee.jpg " alt=" {{ coffee.name }}">
+          <img class="card-img-top img-fluid coffee-detail-img" src="{{ MEDIA_URL }}coffee.jpg " alt=" {{ coffee.name }}">
         </a>
         {% endif %}
       </div>
       <div class="col-md-6">
-        <h1>{{ coffee.name }}</h1>
+        <h1 class="coffee-detail-title">{{ coffee.name }}</h1>
         <hr>
         <p>{{ coffee.description }}</p>
-        <h3>Details:</h3>
+        <h3 class="coffee-detail-sml-title">Details:</h3>
         <ul class="list-unstyled">
           <li><strong>Roasting Level:</strong> {{ coffee.roasting_level }}</li>
           <li><strong>Flavor Profile:</strong> {{ coffee.flavor_profile }}</li>

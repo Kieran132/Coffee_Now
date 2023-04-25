@@ -20,11 +20,11 @@
           <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg " alt=" {{ coffee.name }}">
         </a>
         {% endif %}
-        <div class="card-body">
-          <h5 class="card-title">{{ coffee.name }}</h5>
+        <div class="card-body coffee-list-card-body">
+          <h5 class="card-title coffee-list-name">{{ coffee.name }}</h5>
           <p class="card-text">{{ coffee.description }}</p>
-          <div class="d-flex justify-content-between align-items-center">
-            <a href="{% url 'coffee_detail' coffee.id %}" class="btn btn-sm btn-outline-secondary">View Details</a>
+          <div class="coffee-list-btn">
+            <a href="{% url 'coffee_detail' coffee.id %}" class="btn btn-sm btn-outline-secondary ">View Details</a>
             <small class="text-muted">£{{ coffee.price }}</small>
           </div>
         </div>
