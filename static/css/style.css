@@ -115,12 +115,27 @@ hr {
     width: 100%; 
 }
 
+/* Coffee List Product page styling */
+
+.coffee-box{
+    height: 100%;
+}
+
+.coffee-image{
+    height: 15rem
+}
+
+.coffee-add-btn{
+    margin-bottom: 10px;
+}
 
 /* Media Queries */
 
-/* Screen sizes up to 280px */
+/* Screen sizes from to 280px */
 
-@media (max-width: 280px) {
+@media only screen and (min-width: 280px) {
+
+    /* NavBar, Footer and Index.html styling */
 
     .navbar-dark .nav-title{
         font-size: 1.3rem;
@@ -142,21 +157,38 @@ hr {
         margin-left: 2.6rem;
         font-size: 0.8rem;
     }
+
+    /* Coffee-list styling */
+
+    .coffee-card{
+        margin-bottom: 5px;
+    }
+
 }
 
 
-/* Push footer icons to centre on screen size below 380px */
+/* Push footer icons to centre on screen size from 380px */
 
-@media (max-width: 380px){
+@media only screen and (min-width: 380px){
+
+    /* NavBar, Footer and Index.html styling */
     .footer-social{
         justify-content: center;
         margin-left: 2.3rem;
     }
+
+    /* Coffee-list styling */
+
+    .coffee-card{
+        margin-bottom: 5px;
+    }
 }
 
-/* Screen sizes up to 420px */
+/* Screen sizes from to 420px */
 
-@media (max-width: 420px) {
+@media only screen and (min-width: 420px) {
+
+    /* NavBar, Footer and Index.html styling */
     .copyright {
         display: flex;
         justify-content: center
@@ -166,12 +198,20 @@ hr {
         justify-content: center;
         margin-left: 2.3rem;
     }
+
+    /* Coffee-list styling */
+
+    .coffee-card{
+        margin-bottom: 5px;
+    }
 }
 
 
-/* Screen sizes up to 560px */
+/* Screen sizes from to 560px */
 
-@media (max-width: 560px) {
+@media only screen and (min-width: 540px) and (max-width: 700px) {
+
+    /* NavBar, Footer and Index.html styling */
     .copyright {
         display: flex;
         justify-content: center
@@ -181,19 +221,28 @@ hr {
         justify-content: center;
         margin-left: 2.9rem;
     }
+
+    /* Coffee-list styling */
+
+    .coffee-card {
+        margin-bottom: 5px;
+        width: 80%;
+        margin-left: 3.1rem;
+    }
+}
+
+@media only screen and (min-width: 820px){
+    .coffee-card {
+        margin-bottom: 5px;
+    }
+
 }
 
 /* Screen sizes up to 1200px */
 
-@media (min-width: 992px){
+@media only screen and (min-width: 992px){
 
-
-    .navbar-expand-lg .navbar-nav{
-        
-    }
-    .navbar-expand-lg{
-        margin-top: 25px;
-    }
+    /* NavBar, Footer and Index.html styling */
 
     .navbar-nav .nav-item {
         margin-right: 10px;
