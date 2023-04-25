@@ -151,6 +151,56 @@ hr {
     margin-top: auto;
 }
 
+/* Accessories Product page styling */
+
+.acc-add-btn{
+    margin-bottom: 10px;
+}
+
+.acc-box{
+    height: 100%;
+}
+
+.acc-img{
+    height: 15rem
+}
+
+.acc-name{
+    text-decoration: underline solid;
+    font-size: 1.3rem;
+}
+
+.acc-card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.acc-list-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.acc-btn{
+    height: 1.6rem;
+    width: 5rem;
+    font-size: 0.8rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 3px;
+}
+
+.acc-price{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+    margin-left: 3px;
+}
+
 /* Media Queries */
 
 /* Screen sizes from to 280px */
