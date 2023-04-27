@@ -231,6 +231,11 @@ hr {
     margin-top: 1.2rem;
 }
 
+.all-wish-box{
+    display: flex;
+    justify-content: center;
+}
+
 /* Media Queries */
 
 /* Screen sizes from to 280px */
