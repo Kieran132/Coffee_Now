@@ -155,6 +155,12 @@ hr {
     margin-bottom: 10px;
 }
 
+.coffee-title{
+    justify-content: center;
+    display: flex;
+}
+
+
 /* Accessories Product page styling */
 
 .acc-add-btn{

@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="container mt-5">
-  <h1>Coffee Beans</h1>
+  <h1 class="coffee-title">Coffee Beans</h1>
   <hr>
   {% if request.user.is_superuser %}
   <a class="btn btn-sm btn-outline-secondary coffee-add-btn" href="{% url 'add_product'%}">Add</a>
