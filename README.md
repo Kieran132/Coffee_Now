@@ -118,4 +118,4 @@ Body of the porject Oxygen font was used. This font is clean and easy to read
     - Combines both order and accessories model for the authenticated user to see
     - These products can be deleted from the page by the user
 
-    
+
