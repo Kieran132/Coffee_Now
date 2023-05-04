@@ -9,7 +9,7 @@
                 <div class="row"> 
                 {% for item in wishlist %}
                     {% if item.CoffeeBean %}
-                            <div class="col-md-3 wish-box-sm"> 
+                            <div class="col-md-4 wish-box-sm"> 
                                 <div class="card mb-4 box-shadow wish-box">
                                     {% if item.CoffeeBean.image %}
                                     <a>
@@ -30,7 +30,7 @@
                                 </div>
                             </div>
                     {% elif item.Accessory %}
-                            <div class="col-md-3 wish-box-sm"> 
+                            <div class="col-md-4 wish-box-sm"> 
                                 <div class="card mb-4 box-shadow wish-box">
                                     {% if item.Accessory.image %}
                                     <a>
