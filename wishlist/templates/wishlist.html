@@ -4,13 +4,13 @@
     <div class="container mt-5">
         <h1 class="wish-title">My Wishlist</h1>
         <hr>
-        <div class="row">
-            <div class="col-md-6 all-wish-box">
+        <div class="row text-center justify-content-center">
+            <div class="col-md-8 all-wish-box">
                 <div class="row"> 
                 {% for item in wishlist %}
                     {% if item.CoffeeBean %}
-                            <div class="wish-box-sm"> 
-                                <div class="card wish-box">
+                            <div class="col-md-3 wish-box-sm"> 
+                                <div class="card mb-4 box-shadow wish-box">
                                     {% if item.CoffeeBean.image %}
                                     <a>
                                         <img class="card-img-top wish-img" src="{{ item.CoffeeBean.image.url }}" alt="{{ item.CoffeeBean.name }}">
@@ -30,8 +30,8 @@
                                 </div>
                             </div>
                     {% elif item.Accessory %}
-                            <div class="wish-box-sm"> 
-                                <div class="card wish-box">
+                            <div class="col-md-3 wish-box-sm"> 
+                                <div class="card mb-4 box-shadow wish-box">
                                     {% if item.Accessory.image %}
                                     <a>
                                         <img class="card-img-top wish-img" src="{{ item.Accessory.image.url }}" alt="{{ item.Accessory.name }}">
