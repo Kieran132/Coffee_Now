@@ -25,12 +25,15 @@ https://github.com/Kieran132/Coffee_Now
 - Deployment
 - Credits
 
+***
+
 ## Project Goals
 
 Coffee Now is my fourth project as part of the Code Institute Full Stack Web Developer Course.
 
 The idea behind this project was to combine basic CRUD (Create, Read, Update, Delete) with a functioning website that allows different levels of authorised user to be able to do certain tasks within the project. The technolgies used within this project are; HTML, CSS, Javascript, Python and Django. Within this project I wanted to create a modern, sleek designed, interactive platform that allows any user to view the products and be able to find contact information. In addition, allow authenticated users to add items to their wishlist. Going further, allowing admin the ability to create, read, update and delete products without the use of the admin panel.
 
+***
 
 ## UXD - User Experience Design
 
@@ -41,6 +44,8 @@ When designing and creating this project it was important to keep the user exper
 - The Structure Plane
 - The Skeleton Plane
 - The Surface Plane
+
+***
 
 ## Strategy Plane
 
@@ -59,6 +64,8 @@ In this deisgn phase, I defined my initial outcomes in product objectives and al
 - Simple and easy navigation
 - Clear direction on how to use the website
 
+***
+
 ## Scope Plane
 
 Within the Scope Place, I defined the features that I think would be best suited to the project and the design.
@@ -72,6 +79,8 @@ Within the Scope Place, I defined the features that I think would be best suited
 - Product detail page
 - Wishlist page
 - Different levels of authorisation accessibility
+
+***
 
 ## Structure Plane
 
@@ -118,6 +127,7 @@ Body of the porject Oxygen font was used. This font is clean and easy to read
     - Combines both order and accessories model for the authenticated user to see
     - These products can be deleted from the page by the user
 
+***
 
 ## Skeleton Plane
 
@@ -156,6 +166,8 @@ The accessory page I felt needed to be similar to that of the order page. Firstl
 Whenever the user added a product to their wishlist, I wanted again to stick to the row of 3 look to keep that uniformity. The responsiveness is also the same as the orde page where they are in one coloun above eachother
 
 <img src="media/wireframes/wishlist.png">
+
+***
 
 ## Surface Plane
 
@@ -205,3 +217,88 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 - The ability to delete individual porducts
 
 <img src="media/surface-plane-images/wishlist.html.png">
+
+***
+
+## Technologies Used
+
+- Python
+    - asgiref==3.6.0
+    - backports.zoneinfo;python_version<"3.9"
+    - cloudinary==1.32.0
+    - dj-database-url==0.5.0
+    - dj3-cloudinary-storage==0.0.6
+    - Django==3.2.18
+    - django-allauth==0.54.0
+    - django-summernote==0.8.20.0
+    - gunicorn==20.1.0
+    - oauthlib==3.2.2
+    - Pillow==9.4.0
+    - psycopg2==2.9.5
+    - PyJWT==2.6.0
+    - python3-openid==3.2.0
+    - pytz==2023.3
+    - requests-oauthlib==1.3.1
+    - sqlparse==0.4.3
+- HTML
+- CSS 
+- Bootstrap
+- Javascript
+- Google Fonts
+- Font Awsome
+- Git
+- Github
+- Gitpod
+- Google Developer Tools
+- Balsamiq
+
+***
+
+## Testing
+
+Please click the link below to see the testing document
+
+[Testing](/TESTING.md)
+
+***
+
+## Deployment
+
+### Github Deployment
+The website was delpoyed using GitHub. To do this I did the following;
+1. When on the websites GitHub repository, click on the settings tab
+2. Now on the settings page, on the left hand side of the page, click on the pages tab
+3. Under the Source section, click on the drop down menu titled Branch and select main
+4. The page is now published with a link available to use.
+
+(https://github.com/Kieran132/Coffee_Now)
+
+### Creating a Fork or Copying
+To clone/fork/copy the repository you click on the fork tab which is situated next to unwatch tab in the top right corner of the page
+
+### Clone
+To create a clone you do the following;
+1. Click on the code tab, left of the Gitpod tab
+2. To the right of the repository name, click the clipboard icon
+3. In the IED open GitBash
+4. Change the working directory to the location you prefer
+5. Add Git Clone with the copy of the repositroy name
+6. Clone has been created
+
+### Repositroy deployment via Heroku
+- On the https://dashboard.heroku.com/apps page, click New and then select Create New App from the drop-down menu.
+- When the next page loads insert the App name and Choose a region. The click Create app
+- In the settings tab click on Reveal Config Vars and add the key Port and the value 8000. There were no credentials required for this app.
+- Below this click Add buildpack and choose python and nodejs in that order.
+
+#### Deployment of the app
+- Click on the Deploy tab and select Github-Connect to Github.
+- Enter the repository name and click Search.
+- Choose the repository that holds the correct files and click Connect.
+- A choice is offered between manual or automatic deployment whereby the app is updated when changes are pushed to GitHub.
+- Once the deployment method has been chosen the app will be built and can be launched by clicking the Open app button at the top of the page.
+
+***
+
+## Credits
+
