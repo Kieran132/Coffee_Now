@@ -302,3 +302,22 @@ To create a clone you do the following;
 
 ## Credits
 
+#### Products
+
+- All the products on the order page came from Round Hill Roastary Website (https://roundhillroastery.com/shop/product/isabel-1-anaerobic/)
+- All products on the accessory page came from Origin Coffee Website (https://www.origincoffee.co.uk/products/kalita-filter-papers)
+
+#### Code
+
+- Help with functionality and how to get the project working came from Code Institue walkthrough project, Boutigue Ado
+- Code Institue Tutors helped iron out parts of the code where I was unsuccessful in doing so
+
+#### Django Documentation
+
+- Any issues involving django, I referenced their online documentation to guide me through step by step (https://docs.djangoproject.com/en/4.2/)
+
+#### Bootstrap
+
+- The styling format came from the Bootstrap library throughout the website. This is in the from of navigation bar, collapsed navigation bar, cards for all products, button designs and froms 
+
+(https://getbootstrap.com/docs/5.3/getting-started/introduction/)
