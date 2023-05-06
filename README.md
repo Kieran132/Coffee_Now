@@ -42,7 +42,7 @@ When designing and creating this project it was important to keep the user exper
 - The Skeleton Plane
 - The Surface Plane
 
-### Strategy Plane
+## Strategy Plane
 
 In this deisgn phase, I defined my initial outcomes in product objectives and also the user needs. From the beginning I knew that the website I create needed to be clean looking, modern, easy to use, clear to use and visually appealing to the user.
 
@@ -59,7 +59,7 @@ In this deisgn phase, I defined my initial outcomes in product objectives and al
 - Simple and easy navigation
 - Clear direction on how to use the website
 
-### Scope Plane
+## Scope Plane
 
 Within the Scope Place, I defined the features that I think would be best suited to the project and the design.
 
@@ -73,7 +73,7 @@ Within the Scope Place, I defined the features that I think would be best suited
 - Wishlist page
 - Different levels of authorisation accessibility
 
-### Structure Plane
+## Structure Plane
 
 Here at the Structure Plane, this is where I outlined the design colours, fonts and the building blocks of the project
 
@@ -119,3 +119,10 @@ Body of the porject Oxygen font was used. This font is clean and easy to read
     - These products can be deleted from the page by the user
 
 
+## Skeleton Plane
+
+#### Home Page
+
+I knew how I wanted my home page to look. Welcome text at the top for an inviting feel then blocks of text telling the user what CoffeeNow is about, the ethos and where they get their coffee from. I wanted the layout to be simple and easy for the user and not too much text as to lose the interest of the user.
+
+<img src="media/wireframes/index.html.png">
