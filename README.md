@@ -126,3 +126,34 @@ Body of the porject Oxygen font was used. This font is clean and easy to read
 I knew how I wanted my home page to look. Welcome text at the top for an inviting feel then blocks of text telling the user what CoffeeNow is about, the ethos and where they get their coffee from. I wanted the layout to be simple and easy for the user and not too much text as to lose the interest of the user.
 
 <img src="media/wireframes/index.html.png">
+
+#### Order Page
+
+The layout of the page I wanted contained into a 3 row formation. This I thought would allow the products to be easily visible and readable. Each card would uniform in shape with the other and the layout would identical also. For a responsiveness design the products will be stacked on top of one another depending on the screen size
+
+<img src="media/wireframes/order.png">
+
+#### Order Detail Page
+
+This page I wanted a more indepth description and summary of the product in question. The image will be larger to the left of the screen with title, descriptions, price and button navigations on the right of the image. For a responsiveness design, the image will appear at the top of the screen with the description and buttons following below
+
+<img src="media/wireframes/order-details.png">
+
+#### Contact Page
+
+For the contact page, I wanted to create a simple form that was easy to understand for the user and one which allowed the user to submit only the neccessary field - name, email address and message. In addition, I wanted to add google maps function so the user could physically see the location of CoffeeNow
+
+<img src="media/wireframes/contact.png">
+
+#### Accessories Page
+
+The accessory page I felt needed to be similar to that of the order page. Firstly because of the uniformity of the website throughout but also the way in which each of the products are easily visible and readable. The responsiveness is also the same as the orde page where they are in one coloum above eachother
+
+<img scr="media/wireframes/accessories.png">
+
+#### Wishlist Page
+
+Whenever the user added a product to their wishlist, I wanted again to stick to the row of 3 look to keep that uniformity. The responsiveness is also the same as the orde page where they are in one coloun above eachother
+
+<img src="media/wireframes/wishlist.png">
+
