@@ -157,3 +157,51 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 
 <img src="media/wireframes/wishlist.png">
 
+## Surface Plane
+
+#### Navigation Bar
+
+- Designed and visible throughout
+- Fully responsive on all screen sizes
+- Easy and clear navigation
+
+<img src="media/surface-plane-images/navbar-full-screen.png">
+
+#### Footer
+
+- Designed and visible throughout
+- Fully responsive on all screens
+- Social media icons with links
+
+<img src="media/surface-plane-images/footer.png">
+
+#### Home Page
+
+- Welcoming message
+- Clear descriptuive text
+- Relevant images corrisponding to the text
+
+<img src="media/surface-plane-images/index.html-main-body.png">
+
+#### Order Page
+
+- Visible images showing what the product is
+- Readable text
+- Clear navigation button
+
+<img src="media/surface-plane-images/order-page.png">
+
+#### Order Detail Page
+
+- Large image to left side of the page
+- More in-depth description of the chosen product
+- Clear navigations buttons
+
+<img src="media/surface-plane-images/order-details-page.png">
+
+#### WishList Page
+
+- Visible layout on what the user has added
+- The ability to delete individual porducts
+
+<img src="media/surface-plane-images/wishlist.html.png">
