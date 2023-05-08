@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Oxygen:wght@300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: none;
 }
-body{
+
+body {
     font-family: Oxygen, sans-serif;
     font-weight: 400;
     padding-bottom: 60px;
@@ -18,45 +19,45 @@ h1 {
 }
 
 hr {
-    color: #4F4F4F   ;
+    color: #4F4F4F;
 }
 
-.buttonn:hover{
-    box-shadow:  0 0 10px rgba(0, 0, 0, 0.3);
+.buttonn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 
 /* Header Styling */
 
-.navbar-dark .nav-title{
+.navbar-dark .nav-title {
     color: #3F2929;
     font-size: 2.5rem;
     font-family: MuseoModerno, sans-serif;
 }
 
-.nav-item{
+.nav-item {
     justify-content: space-between;
     font-size: 20px;
     margin-left: 4rem;
     display: flex;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link{
+.navbar-dark .navbar-nav .active>.nav-link {
     color: #3F2929;
     text-decoration: none;
 
 }
 
-.navbar-dark .navbar-nav .coffee-nav-link{
+.navbar-dark .navbar-nav .coffee-nav-link {
     color: #3F2929;
 }
 
-.coffee-nav{
+.coffee-nav {
     background-color: #BFBFBF;
 }
 
 
- /* Footer Styling */
+/* Footer Styling */
 
 .footer-container {
     margin: 0 auto;
@@ -65,7 +66,7 @@ hr {
     color: #3F2929;
 }
 
-.footer-social{
+.footer-social {
     padding-left: 0;
     list-style: none;
     display: flex;
@@ -74,27 +75,27 @@ hr {
     font-size: 20px;
 }
 
-.footer-social li a{
+.footer-social li a {
     color: #3F2929;
 }
 
-.list-inline a:hover{
+.list-inline a:hover {
     text-decoration: none;
 }
 
-.coffee-footer{
+.coffee-footer {
     background-color: #BFBFBF;
     padding-top: 10px;
 }
 
-.copyright{
+.copyright {
     color: #3F2929;
 }
 
 
 /* Home Page Styling */
 
-.img-sm{
+.img-sm {
     height: 70%;
     width: 70%;
 }
@@ -116,46 +117,46 @@ hr {
 
 #map {
     height: 400px;
-    width: 100%; 
+    width: 100%;
 }
 
 /* Coffee List Product page styling */
 
-.coffee-box{
+.coffee-box {
     height: 100%;
 }
 
-.coffee-image{
+.coffee-image {
     height: 15rem
 }
 
-.coffee-add-btn{
+.coffee-add-btn {
     margin-bottom: 10px;
 }
 
-.coffee-list-name{
+.coffee-list-name {
     text-decoration: underline solid;
     font-size: 1.3rem;
 }
 
-.coffee-list-card-body{
+.coffee-list-card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
 
-.coffee-list-btn{
+.coffee-list-btn {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
 }
 
-.coffee-card{
+.coffee-card {
     margin-bottom: 10px;
 }
 
-.coffee-title{
+.coffee-title {
     justify-content: center;
     display: flex;
 }
@@ -163,37 +164,37 @@ hr {
 
 /* Accessories Product page styling */
 
-.acc-add-btn{
+.acc-add-btn {
     margin-bottom: 10px;
 }
 
-.acc-box{
+.acc-box {
     height: 100%;
 }
 
-.acc-img{
+.acc-img {
     height: 15rem
 }
 
-.acc-name{
+.acc-name {
     text-decoration: underline solid;
     font-size: 1.3rem;
 }
 
-.acc-card-body{
+.acc-card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
 
-.acc-list-btn{
+.acc-list-btn {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
 }
 
-.acc-btn{
+.acc-btn {
     height: 1.6rem;
     width: 5rem;
     font-size: 0.8rem;
@@ -204,7 +205,7 @@ hr {
     margin-left: 3px;
 }
 
-.acc-price{
+.acc-price {
     display: flex;
     justify-content: center;
     margin-top: 1.2rem;
@@ -213,35 +214,35 @@ hr {
 
 /* Wishlist Product page styling */
 
-.wish-box{
+.wish-box {
     height: 100%;
 }
 
-.wish-img{
+.wish-img {
     height: 10rem
 }
 
-.wish-body{
+.wish-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
 
-.wish-name{
+.wish-name {
     text-decoration: underline solid;
     font-size: 1.3rem;
     display: flex;
     justify-content: center;
 }
 
-.wish-price{
+.wish-price {
     display: flex;
     justify-content: center;
     margin-top: 1.2rem;
 }
 
-.all-wish-box{
+.all-wish-box {
     display: flex;
     justify-content: center;
 }
@@ -254,11 +255,11 @@ hr {
 
     /* NavBar, Footer and Index.html styling */
 
-    .navbar-dark .nav-title{
+    .navbar-dark .nav-title {
         font-size: 1.3rem;
     }
 
-    h1{
+    h1 {
         font-size: 1.5rem;
     }
 
@@ -266,10 +267,10 @@ hr {
         display: flex;
         justify-content: center;
         font-size: 0.7rem;
-        
+
     }
 
-    .footer-social{
+    .footer-social {
         justify-content: center;
         margin-left: 2.6rem;
         font-size: 0.8rem;
@@ -277,52 +278,54 @@ hr {
 
     /* Coffee-list styling */
 
-    .coffee-card{
+    .coffee-card {
         margin-bottom: 5px;
     }
 
     /* Coffee-detail styling */
 
-    .coffee-detail-img{
+    .coffee-detail-img {
         height: 18rem;
         margin-bottom: 5px;
     }
 
-    .coffee-detail-title{
+    .coffee-detail-title {
         justify-content: center;
         display: flex;
     }
 
-    .coffee-detail-sml-title{
+    .coffee-detail-sml-title {
         font-size: 1.3rem;
         text-decoration: underline solid;
-        
+
     }
 
-    .coffee-detail-btn{
+    .coffee-detail-btn {
         margin-top: 5px;
     }
 
     /* Accessories styling */
 
-    .acc-title{
+    .acc-title {
         justify-content: center;
         display: flex;
     }
 
-    .acc-box-sm{
+    .acc-box-sm {
         margin-bottom: 5px;
     }
 
     /* Wishlist styling */
 
-    .wish-title{
+    .wish-title {
         justify-content: center;
         display: flex;
     }
 
-    .wish-box-sm{
+    .wish-box-sm {
         margin-top: 5px;
+        width: 80%;
+        margin-left: 1.8rem;
     }
 
 
@@ -331,10 +334,10 @@ hr {
 
 /* Push footer icons to centre on screen size from 380px */
 
-@media only screen and (min-width: 380px) and (max-width: 419px){
+@media only screen and (min-width: 380px) and (max-width: 419px) {
 
     /* NavBar, Footer and Index.html styling */
-    .footer-social{
+    .footer-social {
         justify-content: center;
         margin-left: 2.3rem;
     }
@@ -346,29 +349,29 @@ hr {
 
     /* Coffee-list styling */
 
-    .coffee-card{
+    .coffee-card {
         margin-bottom: 5px;
     }
 
     /* Accessories styling */
 
-    .acc-title{
+    .acc-title {
         justify-content: center;
         display: flex;
     }
 
-    .acc-box-sm{
+    .acc-box-sm {
         margin-bottom: 5px;
     }
 
     /* Wishlist styling */
 
-    .wish-title{
+    .wish-title {
         justify-content: center;
         display: flex;
     }
 
-    .wish-box-sm{
+    .wish-box-sm {
         margin-bottom: 5px;
         width: 80%;
         margin-left: 2.6rem;
@@ -386,36 +389,36 @@ hr {
         justify-content: center
     }
 
-    .footer-social{
+    .footer-social {
         justify-content: center;
         margin-left: 2.3rem;
     }
 
     /* Coffee-list styling */
 
-    .coffee-card{
+    .coffee-card {
         margin-bottom: 5px;
     }
 
     /* Accessories styling */
 
-    .acc-title{
+    .acc-title {
         justify-content: center;
         display: flex;
     }
 
-    .acc-box-sm{
+    .acc-box-sm {
         margin-bottom: 5px;
     }
 
-     /* Wishlist styling */
+    /* Wishlist styling */
 
-     .wish-title{
+    .wish-title {
         justify-content: center;
         display: flex;
     }
 
-    .wish-box-sm{
+    .wish-box-sm {
         margin-bottom: 5px;
         width: 60%;
         margin-left: 6.1rem;
@@ -433,7 +436,7 @@ hr {
         justify-content: center
     }
 
-    .footer-social{
+    .footer-social {
         justify-content: center;
         margin-left: 2.9rem;
     }
@@ -448,30 +451,30 @@ hr {
 
     /* Accessories styling */
 
-    .acc-box-sm{
+    .acc-box-sm {
         margin-bottom: 5px;
         width: 80%;
         margin-left: 3.1rem;
     }
 
-     /* Wishlist styling */
+    /* Wishlist styling */
 
-     .wish-title{
+    .wish-title {
         justify-content: center;
         display: flex;
     }
 
-    .wish-box-sm{
+    .wish-box-sm {
         margin-bottom: 5px;
-        width: 80%!important;
-        margin-left: 3.1rem;
+        width: 80% !important;
+        margin-left: 4.8rem;
     }
 
-    
+
 }
 
 
-@media only screen and (min-width: 820px) and (max-width: 991px){
+@media only screen and (min-width: 820px) and (max-width: 991px) {
 
     .coffee-card {
         margin-bottom: 5px;
@@ -479,18 +482,18 @@ hr {
 
     /* Accessories styling */
 
-    .acc-box-sm{
+    .acc-box-sm {
         margin-bottom: 5px;
     }
 
     /* Wishlist styling */
 
-    .wish-title{
+    .wish-title {
         justify-content: center;
         display: flex;
     }
 
-    .wish-box-sm{
+    .wish-box-sm {
         margin-bottom: 5px;
     }
 
@@ -499,34 +502,34 @@ hr {
 
 /* Screen sizes up to 1200px */
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
 
     /* NavBar, Footer and Index.html styling */
 
     .navbar-nav .nav-item {
         margin-right: 10px;
         margin-left: 10px;
-      }
+    }
 
-     /* Accessories styling */
+    /* Accessories styling */
 
-    .acc-title{
+    .acc-title {
         justify-content: center;
         display: flex;
     }
 
-    .acc-box-sm{
+    .acc-box-sm {
         margin-bottom: 5px;
     }
 
     /* Wishlist styling */
 
-    .wish-title{
+    .wish-title {
         justify-content: center;
         display: flex;
     }
-    
-    .wish-box-sm{
+
+    .wish-box-sm {
         margin-bottom: 5px;
     }
 }
