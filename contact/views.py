@@ -15,11 +15,13 @@ def contact(request):
         print("This is message:", message)
         print("This is email:", email)
 
+        email = request.POST.get('email')
+
         send_mail(
-            'Contact Form Submission from {}'.format(name),
+            'Contact Form Submission from {}'.format(name, email),
             message,
             email,
-            ['kiemclean@hotmail.co.uk'],
+            ['coffeenowCI23@gmail.com'],
             fail_silently=False,
         )
     return render(request, 'contact.html')
