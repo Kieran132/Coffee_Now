@@ -256,7 +256,7 @@ hr {
     /* NavBar, Footer and Index.html styling */
 
     .navbar-dark .nav-title {
-        font-size: 1.3rem;
+        font-size: 1.9rem;
     }
 
     h1 {
@@ -466,8 +466,8 @@ hr {
 
     .wish-box-sm {
         margin-bottom: 5px;
-        width: 80% !important;
-        margin-left: 4.8rem;
+        width: 60%;
+        margin-left: 6.6rem;
     }
 
 
