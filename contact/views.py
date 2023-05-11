@@ -18,7 +18,7 @@ def contact(request):
         email = request.POST.get('email')
 
         send_mail(
-            'Contact Form Submission from {}'.format(name, email),
+            'Contact Form Submission from {}'.format(name + ', ' + email),
             message,
             email,
             ['coffeenowCI23@gmail.com'],
