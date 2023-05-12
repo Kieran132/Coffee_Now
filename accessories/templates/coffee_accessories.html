@@ -1,35 +1,36 @@
 {% extends 'base.html' %}
-
 {% block content %}
 <div class="container mt-5">
-  <h1 class="acc-title">Coffee Accessories</h1>
-  <hr>
-  {% if request.user.is_superuser %}
-  <a class="btn btn-sm btn-outline-secondary acc-add-btn" href="{% url 'add_product_b' %}">Add</a>
-  {% endif %}
-  <div class="row">
-    {% for accessory in accessories %}
-    <div class=" col-md-4 acc-box-sm">
-      <div class="card mb-4 box-shadow acc-box">
-        <img src="{{ accessory.image.url }}" class="card-img-top acc-img" alt="{{ accessory.name }}">
-        <div class="card-body acc-card-body">
-          <h5 class="card-title acc-name">{{ accessory.name }}</h5>
-          <p class="card-text">{{ accessory.description }}</p>
-          <div class="acc-list-btn">
-            {% if request.user.is_authenticated %}
-            <a href="{% url 'add_accessory_to_wishlist' accessory_id=accessory.id %}"
-              class="btn btn-sm btn-outline-secondary acc-btn-wish">Add to Wishlist</a>
-            {% endif %}
-            {% if request.user.is_superuser %}
-            <a class="btn btn-sm btn-outline-secondary acc-btn" href="{% url 'edit_product_b' accessory.id %}">Edit</a>
-            <a class="btn btn-sm btn-outline-secondary acc-btn" href="{% url 'delete_product' accessory.id %}">Delete</a>
-            {% endif %}
-            <small class="text-muted acc-price">£{{ accessory.price }}</small>
-          </div>
+    <h1 class="acc-title">Coffee Accessories</h1>
+    <hr>
+    {% if request.user.is_superuser %}
+    <a class="btn btn-sm btn-outline-secondary acc-add-btn" href="{% url 'add_product_b' %}">Add</a>
+    {% endif %}
+    <div class="row">
+        {% for accessory in accessories %}
+        <div class=" col-md-4 acc-box-sm">
+            <div class="card mb-4 box-shadow acc-box">
+                <img src="{{ accessory.image.url }}" class="card-img-top acc-img" alt="{{ accessory.name }}">
+                <div class="card-body acc-card-body">
+                    <h5 class="card-title acc-name">{{ accessory.name }}</h5>
+                    <p class="card-text">{{ accessory.description }}</p>
+                    <div class="acc-list-btn">
+                        {% if request.user.is_authenticated %}
+                        <a href="{% url 'add_accessory_to_wishlist' accessory_id=accessory.id %}"
+                            class="btn btn-sm btn-outline-secondary acc-btn-wish">Add to Wishlist</a>
+                        {% endif %}
+                        {% if request.user.is_superuser %}
+                        <a class="btn btn-sm btn-outline-secondary acc-btn"
+                            href="{% url 'edit_product_b' accessory.id %}">Edit</a>
+                        <a class="btn btn-sm btn-outline-secondary acc-btn"
+                            href="{% url 'delete_product' accessory.id %}">Delete</a>
+                        {% endif %}
+                        <small class="text-muted acc-price">£{{ accessory.price }}</small>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-  </div>
 </div>
 {% endblock %}

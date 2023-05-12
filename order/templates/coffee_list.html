@@ -1,36 +1,38 @@
 {% extends 'base.html' %}
-
 {% block content %}
 <div class="container mt-5">
-  <h1 class="coffee-title">Coffee Beans</h1>
-  <hr>
-  {% if request.user.is_superuser %}
-  <a class="btn btn-sm btn-outline-secondary coffee-add-btn" href="{% url 'add_product'%}">Add</a>
-  {% endif %}
-  <div class="row coffee-list-products">
-    {% for coffee in coffee_beans %}
-    <div class="col-md-4 coffee-card">
-      <div class="card mb-4 box-shadow coffee-box">
-        {% if coffee.image %}
-        <a>
-          <img class="card-img-top img-fluid coffee-image" src="{{ coffee.image.url }}" alt="{{ coffee.name }}">
-        </a>
-        {% else %}
-        <a>
-          <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg " alt=" {{ coffee.name }}">
-        </a>
-        {% endif %}
-        <div class="card-body coffee-list-card-body">
-          <h5 class="card-title coffee-list-name">{{ coffee.name }}</h5>
-          <p class="card-text">{{ coffee.description }}</p>
-          <div class="coffee-list-btn">
-            <a href="{% url 'coffee_detail' coffee.id %}" class="btn btn-sm btn-outline-secondary ">View Details</a>
-            <small class="text-muted">£{{ coffee.price }}</small>
-          </div>
+    <h1 class="coffee-title">Coffee Beans</h1>
+    <hr>
+    {% if request.user.is_superuser %}
+    <a class="btn btn-sm btn-outline-secondary coffee-add-btn" href="{% url 'add_product'%}">Add</a>
+    {% endif %}
+    <div class="row coffee-list-products">
+        {% for coffee in coffee_beans %}
+        <div class="col-md-4 coffee-card">
+            <div class="card mb-4 box-shadow coffee-box">
+                {% if coffee.image %}
+                <a>
+                    <img class="card-img-top img-fluid coffee-image" src="{{ coffee.image.url }}"
+                        alt="{{ coffee.name }}">
+                </a>
+                {% else %}
+                <a>
+                    <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg "
+                        alt=" {{ coffee.name }}">
+                </a>
+                {% endif %}
+                <div class="card-body coffee-list-card-body">
+                    <h5 class="card-title coffee-list-name">{{ coffee.name }}</h5>
+                    <p class="card-text">{{ coffee.description }}</p>
+                    <div class="coffee-list-btn">
+                        <a href="{% url 'coffee_detail' coffee.id %}" class="btn btn-sm btn-outline-secondary ">View
+                            Details</a>
+                        <small class="text-muted">£{{ coffee.price }}</small>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-  </div>
 </div>
 {% endblock %}

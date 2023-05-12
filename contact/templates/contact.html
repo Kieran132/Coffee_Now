@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-
 {% block content %}
 <h1 class="text-center mb-4">Contact Us</h1>
 <hr>
@@ -8,7 +7,6 @@
     Your message has been sent!
 </div>
 {% endif %}
-
 <form method="POST" action="{% url 'contact' %}" id="contact-form">
     {% csrf_token %}
     <div class="form-group">
@@ -46,10 +44,7 @@
         });
     }
 </script>
-
-
 <script>src = "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"</script>
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQiMcLh9yfKtsaSj-AyNOAWtT7hClK-LM&callback=initMap"></script>
-
 {% endblock %}

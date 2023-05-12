@@ -61,3 +61,16 @@
 ***
 ***
 
+## Validation
+
+#### W3C HTML Validation
+
+- 0 Errors
+- 0 Warnings
+
+#### W3C CSS Validator
+
+- 0 Errors
+- 0 Warnings
+
+####
