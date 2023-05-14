@@ -201,8 +201,8 @@ hr {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
     margin-left: 3px;
+    margin-bottom: 5px;
 }
 
 .acc-price {
@@ -315,6 +315,16 @@ hr {
         margin-bottom: 5px;
     }
 
+    .acc-list-btn {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: auto;
+        align-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
     /* Wishlist styling */
 
     .wish-title {
@@ -409,6 +419,8 @@ hr {
 
     .acc-box-sm {
         margin-bottom: 5px;
+        width: 80%;
+        margin-left: 3.2rem;
     }
 
     /* Wishlist styling */
@@ -457,6 +469,16 @@ hr {
         margin-left: 3.1rem;
     }
 
+    .acc-list-btn {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: auto;
+        align-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
     /* Wishlist styling */
 
     .wish-title {
@@ -486,6 +508,16 @@ hr {
         margin-bottom: 5px;
     }
 
+    .acc-list-btn {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: auto;
+        align-content: space-around;
+        align-items: baseline;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
     /* Wishlist styling */
 
     .wish-title {
@@ -496,6 +528,8 @@ hr {
     .wish-box-sm {
         margin-bottom: 5px;
     }
+
+
 
 
 }
