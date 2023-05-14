@@ -4,61 +4,55 @@
     <h1 class="wish-title">My Wishlist</h1>
     <hr>
     <div class="row">
-        <div class="all-wish-box">
-            <div class="row">
-                {% for item in wishlist %}
-                {% if item.CoffeeBean %}
-                <div class="col-md-4 wish-box-sm">
-                    <div class="card mb-4 box-shadow wish-box">
-                        {% if item.CoffeeBean.image %}
-                        <a>
-                            <img class="card-img-top wish-img" src="{{ item.CoffeeBean.image.url }}"
-                                alt="{{ item.CoffeeBean.name }}">
-                        </a>
-                        {% else %}
-                        <a>
-                            <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg "
-                                alt=" {{ coffee.name }}">
-                        </a>
-                        {% endif %}
-                        <div class="card-body wish-body">
-                            <h5 class="card-title wish-name">{{ item.CoffeeBean.name }}</h5>
-                            <hr>
-                            <small class="text-muted wish-price">£{{ item.CoffeeBean.price }}</small>
-                            <hr>
-                            <a class="btn btn-sm btn-outline-secondary"
-                                href="{% url 'wishlist-delete' item.id %}">Delete</a>
-                        </div>
-                    </div>
-                </div>
-                {% elif item.Accessory %}
-                <div class="col-md-4 wish-box-sm">
-                    <div class="card mb-4 box-shadow wish-box">
-                        {% if item.Accessory.image %}
-                        <a>
-                            <img class="card-img-top wish-img" src="{{ item.Accessory.image.url }}"
-                                alt="{{ item.Accessory.name }}">
-                        </a>
-                        {% else %}
-                        <a>
-                            <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg "
-                                alt=" {{ coffee.name }}">
-                        </a>
-                        {% endif %}
-                        <div class="card-body wish-body">
-                            <h5 class="card-title wish-name">{{ item.Accessory.name }}</h5>
-                            <hr>
-                            <small class="text-muted wish-price">£{{ item.Accessory.price }}</small>
-                            <hr>
-                            <a class="btn btn-sm btn-outline-secondary"
-                                href="{% url 'wishlist-delete' item.id %}">Delete</a>
-                        </div>
-                    </div>
-                </div>
+        {% for item in wishlist %}
+        {% if item.CoffeeBean %}
+        <div class="col-md-4 wish-box-sm">
+            <div class="card mb-4 box-shadow wish-box">
+                {% if item.CoffeeBean.image %}
+                <a>
+                    <img class="card-img-top wish-img" src="{{ item.CoffeeBean.image.url }}"
+                        alt="{{ item.CoffeeBean.name }}">
+                </a>
+                {% else %}
+                <a>
+                    <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg "
+                        alt=" {{ coffee.name }}">
+                </a>
                 {% endif %}
-                {% endfor %}
+                <div class="card-body wish-body">
+                    <h5 class="card-title wish-name">{{ item.CoffeeBean.name }}</h5>
+                    <hr>
+                    <small class="text-muted wish-price">£{{ item.CoffeeBean.price }}</small>
+                    <hr>
+                    <a class="btn btn-sm btn-outline-secondary" href="{% url 'wishlist-delete' item.id %}">Delete</a>
+                </div>
             </div>
         </div>
+        {% elif item.Accessory %}
+        <div class="col-md-4 wish-box-sm">
+            <div class="card mb-4 box-shadow wish-box">
+                {% if item.Accessory.image %}
+                <a>
+                    <img class="card-img-top wish-img" src="{{ item.Accessory.image.url }}"
+                        alt="{{ item.Accessory.name }}">
+                </a>
+                {% else %}
+                <a>
+                    <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg "
+                        alt=" {{ coffee.name }}">
+                </a>
+                {% endif %}
+                <div class="card-body wish-body">
+                    <h5 class="card-title wish-name">{{ item.Accessory.name }}</h5>
+                    <hr>
+                    <small class="text-muted wish-price">£{{ item.Accessory.price }}</small>
+                    <hr>
+                    <a class="btn btn-sm btn-outline-secondary" href="{% url 'wishlist-delete' item.id %}">Delete</a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
     </div>
 </div>
 {% endblock %}
