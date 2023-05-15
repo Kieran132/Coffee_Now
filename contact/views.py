@@ -4,6 +4,7 @@ from .models import ContactForm
 from django.views.generic import View
 from django.core.mail import send_mail
 from django.http import HttpResponse
+from django.conf import settings
 
 
 def contact(request):
@@ -14,8 +15,6 @@ def contact(request):
         print("This is name:", name)
         print("This is message:", message)
         print("This is email:", email)
-
-        email = request.POST.get('email')
 
         send_mail(
             'Contact Form Submission from {}'.format(name + ', ' + email),
