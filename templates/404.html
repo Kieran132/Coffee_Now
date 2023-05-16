@@ -1,11 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
 <div class="container">
     <h1>Oops!</h1>
     <p>We couldn't find the page you were looking for.</p>
-    <p>Maybe you mistyped the URL or the page has been removed.</p>
-    <img src="{% static 'media/coffee.jpg' %}" alt="Coffee Cup">
     <a href="{% url 'index'%}">Go back to the home page</a>
 </div>
 
