@@ -21,13 +21,21 @@
         <label for="message">Message:</label>
         <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
     </div>
-    <button type="submit" class="btn btn-sm btn-outline-secondary">Send</button>
+    <button type="submit" class="btn btn-sm btn-outline-secondary" id="submit-btn">Send</button>
 </form>
 <hr>
 <h2>Find Us</h2>
 <div class="container">
     <div id="map"></div>
 </div>
+<script>
+    const submitBtn = document.querySelector('#submit-btn');
+    submitBtn.addEventListener('click', (event) => {
+        event.preventDefault();
+        alert('Thank you for submitting! Someone will be in touch!');
+        document.querySelector('form').submit();
+    });
+</script>
 <script>
     function initMap() {
         const uluru = {
