@@ -15,7 +15,7 @@
                 </a>
                 {% else %}
                 <a>
-                    <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg "
+                    <img class="card-img-top img-fluid coffee-image " src="{% static 'media/coffee.jpg' %}"
                         alt=" {{ coffee.name }}">
                 </a>
                 {% endif %}
@@ -38,7 +38,7 @@
                 </a>
                 {% else %}
                 <a>
-                    <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg "
+                    <img class="card-img-top img-fluid coffee-image " src="{% static 'media/coffee.jpg' %}"
                         alt=" {{ coffee.name }}">
                 </a>
                 {% endif %}
