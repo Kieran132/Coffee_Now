@@ -10,7 +10,16 @@
         {% for accessory in accessories %}
         <div class=" col-md-4 acc-box-sm">
             <div class="card mb-4 box-shadow acc-box">
-                <img src="{{ accessory.image.url }}" class="card-img-top acc-img" alt="{{ accessory.name }}">
+                {% if accessory.image %}
+                <a>
+                    <img src="{{ accessory.image.url }}" class="card-img-top acc-img" alt="{{ accessory.name }}">
+                </a>
+                {% else %}
+                <a>
+                    <img class="card-img-top img-fluid coffee-image " src="{{ MEDIA_URL }}coffee.jpg "
+                        alt=" {{ coffee.name }}">
+                </a>
+                {% endif %}
                 <div class="card-body acc-card-body">
                     <h5 class="card-title acc-name">{{ accessory.name }}</h5>
                     <p class="card-text">{{ accessory.description }}</p>

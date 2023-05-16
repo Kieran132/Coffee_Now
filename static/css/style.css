@@ -22,8 +22,13 @@ hr {
     color: #4F4F4F;
 }
 
-.buttonn:hover {
+.button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: flex;
+    margin-bottom: 0.5rem;
 }
 
 
