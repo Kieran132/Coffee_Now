@@ -24,18 +24,15 @@ def coffee_detail(request, id):
 
 @login_required
 def add_product(request):
-    form = BeanForm
+    form = BeanForm()
     if request.method == 'POST':
         form = BeanForm(request.POST, request.FILES)
-        print("errors in form", form.errors)
         if form.is_valid():
-            print("Form submitted")
             form.save()
+            messages.success(request, 'Product added successfully.')
             return redirect('coffee_list')
         else:
-            messages.error(
-                request,
-                'Error adding product, please check the the form is valid')     
+            messages.error(request, 'Error adding product. Please check if the form is valid.')
     return render(request, 'add_product.html', {'form': form})
 
 
