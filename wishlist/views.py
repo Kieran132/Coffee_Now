@@ -2,16 +2,29 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Wishlist
 from order.models import CoffeeBean
 from accessories.models import Accessory
+from django.contrib import messages
 
 
 def add_to_wishlist(request, coffee_id=None, accessory_id=None):
+    user = request.user
+    coffee = None
+    accessory = None
+
     if coffee_id:
-        coffee = CoffeeBean.objects.get(id=coffee_id)
-        wishlist = Wishlist(user=request.user, CoffeeBean=coffee)
+        coffee = get_object_or_404(CoffeeBean, id=coffee_id)
     elif accessory_id:
-        accessory = Accessory.objects.get(id=accessory_id)
-        wishlist = Wishlist(user=request.user, Accessory=accessory)
-    wishlist.save()
+        accessory = get_object_or_404(Accessory, id=accessory_id)
+
+    # Check if the item already exists in the user's wishlist
+    item_exists = Wishlist.objects.filter(user=user, CoffeeBean=coffee, Accessory=accessory).exists()
+
+    if item_exists:
+        messages.warning(request, "This item is already in your wishlist.")
+    else:
+        wishlist = Wishlist(user=user, CoffeeBean=coffee, Accessory=accessory)
+        wishlist.save()
+        messages.success(request, "Item added to wishlist successfully.")
+
     return redirect('wishlist')
 
 

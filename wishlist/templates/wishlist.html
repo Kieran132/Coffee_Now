@@ -56,4 +56,18 @@
         {% endfor %}
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+<script>
+    {% if messages %}
+    {% for message in messages %}
+    Swal.fire({
+        icon: "{{ message.tags }}",
+        title: "{{ message.tags }}",
+        text: "{{ message }}",
+        showConfirmButton: false,
+        timer: 3000
+    });
+    {% endfor %}
+    {% endif %}
+</script>
 {% endblock %}
