@@ -5,6 +5,9 @@ from accessories.models import Accessory
 
 
 class Wishlist(models.Model):
+    """
+    Model takes information from existing models 
+    """
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     CoffeeBean = models.ForeignKey(
         CoffeeBean, on_delete=models.CASCADE, null=True, blank=True)

@@ -8,6 +8,10 @@ from django.conf import settings
 
 
 def contact(request):
+    """
+    Function obtains the users input fields then uses Google smtp backend
+    server to send the information to an external email
+    """
     if request.method == 'POST':
         name = request.POST['name']
         email = request.POST['email']

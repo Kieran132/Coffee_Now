@@ -2,6 +2,10 @@ from django.db import models
 
 
 class CoffeeBean(models.Model):
+    """
+    This model incorporates Roasting level, strength level and flavor profile
+    into one model of its own
+    """
     name = models.CharField(max_length=255)
     description = models.TextField()
     image = models.ImageField(null=True, blank=True)
@@ -18,6 +22,9 @@ class CoffeeBean(models.Model):
 
 
 class RoastingLevel(models.Model):
+    """
+    Model allows user to select Roast level
+    """
     name = models.CharField(max_length=255)
     description = models.TextField()
 
@@ -26,6 +33,9 @@ class RoastingLevel(models.Model):
 
 
 class FlavorProfile(models.Model):
+    """
+    Model allows user to select Flavor Profile
+    """
     name = models.CharField(max_length=255)
     description = models.TextField()
 
@@ -34,6 +44,9 @@ class FlavorProfile(models.Model):
 
 
 class StrengthLevel(models.Model):
+    """
+    Model allows user to select Strength level
+    """
     name = models.CharField(max_length=255)
     description = models.TextField()
 
