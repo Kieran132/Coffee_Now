@@ -42,7 +42,6 @@ def wishlist(request):
     return render(request, 'wishlist.html', {'wishlist': wishlist})
 
 
-
 def wishlist_delete(request, item_id):
     """
     This function allows the user to delete a product from their wishlist page.

@@ -27,7 +27,7 @@
                 <li><strong>Price:</strong> £{{ coffee.price }}</li>
             </ul>
             {% if request.user.is_authenticated %}
-            <a href="{% url 'add_coffee_to_wishlist' coffee_id=coffee.id %}"
+            <a href="{% url 'add_coffee_to_wishlist' coffee.id %}"
                 class="btn btn-sm btn-outline-secondary coffee-detail-btn">Add to Wishlist</a>
             {% endif %}
             <a href="{% url 'coffee_list' %}" class="btn btn-sm btn-outline-secondary coffee-detail-btn">Back to Coffee

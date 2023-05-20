@@ -64,11 +64,11 @@ def edit_product_b(request, accessory_id):
 
 
 @login_required
-def delete_product(request, id):
+def delete_product(request, accessory_id):
     """
     Function allows authenticated users to delete a product to the Accessory#
     page.
     """
-    accessory = Accessory.objects.get(id=id)
+    accessory = get_object_or_404(Accessory, id=accessory_id)
     accessory.delete()
     return redirect('coffee_accessories')

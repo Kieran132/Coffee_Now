@@ -78,11 +78,11 @@ def edit_product(request, coffee_id):
 
 
 @login_required
-def delete_product(request, id):
+def order_delete_product(request, coffee_id):
     """
     This function only allows admin users to be able to delete a product from the
     coffee product lise
     """
-    coffee_beans = CoffeeBean.objects.get(id=id)
+    coffee_beans = get_object_or_404(CoffeeBean, id=coffee_id)
     coffee_beans.delete()
     return redirect('coffee_list')
