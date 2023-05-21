@@ -28,6 +28,11 @@
                     <div class="coffee-list-btn">
                         <a href="{% url 'coffee_detail' coffee.id %}" class="btn btn-sm btn-outline-secondary ">View
                             Details</a>
+                        {% if request.user.is_authenticated %}
+                        <a href="{% url 'add_coffee_to_wishlist' coffee.id %}"
+                            class="btn btn-sm btn-outline-secondary coffee-detail-btn">Add to
+                            Wishlist</a>
+                        {% endif %}
                         <small class="text-muted">£{{ coffee.price }}</small>
                     </div>
                 </div>
