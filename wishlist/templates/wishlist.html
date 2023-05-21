@@ -60,15 +60,35 @@
 <script>
     {% if messages %}
     {% for message in messages %}
+    {% if message.tags == 'success' and message.message == 'Item added to wishlist successfully.' %}
     Swal.fire({
-        icon: "{{ message.tags }}",
-        title: "{{ message.tags }}",
-        text: "{{ message }}",
+        icon: 'success',
+        title: 'Success',
+        text: '{{ message }}',
         showConfirmButton: false,
         timer: 3000
     });
+    {% elif message.tags == 'success' and message.message == 'Product deleted successfully.' %}
+    Swal.fire({
+        icon: 'success',
+        title: 'Deleted',
+        text: '{{ message }}',
+        showConfirmButton: false,
+        timer: 3000
+    });
+    {% elif message.tags == 'warning' and message.message == 'This item is already in your wishlist.' %}
+    Swal.fire({
+        icon: 'warning',
+        title: 'Warning',
+        text: '{{ message }}',
+        showConfirmButton: false,
+        timer: 3000
+    });
+    {% endif %}
     {% endfor %}
     {% endif %}
 </script>
+
+
 
 {% endblock %}
