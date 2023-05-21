@@ -44,7 +44,7 @@ def add_product(request):
             return redirect('coffee_list')
         else:
             messages.error(request,
-             'Error adding product. Please check if the form is valid.')
+            'Error adding product. Please check if the form is valid.')
     return render(request, 'add_product.html', {'form': form})
 
 
