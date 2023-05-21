@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-wd)bod-xr2q^!cuo8$!3p&*bce@khij^i6=(o_@f3$vm96j-@k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['coffee-now-pp4.herokuapp.com', 'localhost', '8000-kieran132-coffee-now-575bcpau1v.us2.codeanyapp.com', '8002-kieran132-coffee-now-575bcpau1v.us2.codeanyapp.com', '8006-kieran132-coffee-now-575bcpau1v.us2.codeanyapp.com']
 
