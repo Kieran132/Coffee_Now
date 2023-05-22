@@ -73,4 +73,21 @@
 - 0 Errors
 - 0 Warnings
 
-####
+## Bugs / Issues and Resolutions
+
+- Fix - Corrected bootstrap class to all dropdown navbar to work
+    The initial way I had dropdown menu set up didnt allow for the function to work while viewing on smaller screen sizes. 
+    Resolution - Amend the name in the clas by adding 'bs' to data toggle and data target
+
+- FIX - Add if statement for images on wishlist page
+    I had a proble viewing the correct product image on wishlist.html as i was using two different models into on html page.
+    Resolution - Add an if statement to iterate through each of the models to show the correct image. If not then a default image will be shown
+
+- FIX - Amend spacing between accessory products min 950px screen size
+    Viewing the products on a min 950px screen size meant the product cards squeezed up together, not looking very clean or appealing
+    Resolution - Added mt-5 class and removed 5rem margin-left
+
+- FIX - changed email to charfield and added information to send_mail function
+    As i have used googles smtp server to send details of the contact form to an external email, it meant i had to leave the from email as the email i am sending this to. 
+    Resolution - To be able to see the users email address in the email, I changed the email part of the model to Charfield and added that information to the title of the email - "'Contact Form Submission from {}'.format(name + ', ' + email),"
+
