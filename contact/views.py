@@ -28,6 +28,7 @@ def contact(request):
             ['coffeenowCI23@gmail.com'],
             fail_silently=False,
         )
-        print(" After send mail....")
+        
+        messages.success(request, 'Thank you for submitting! Someone will be in touch!')
 
     return render(request, 'contact.html')
