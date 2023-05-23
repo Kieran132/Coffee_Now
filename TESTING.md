@@ -58,6 +58,17 @@
 - Adding items correctly works and adds the item to the correct page
 - Deleting of an item correctly works and deletes intended item from webpage and also database
 
+#### Pop up messages
+
+- On adding and deleting product to wishlist, Pop up messages successfully appear with correct message
+- Contact form pop up message successfully appear upon submit button
+
+#### External Email 
+
+- On submitting the contact form, the information is successfully sent to an external gmail account using smtp server
+
+<img src="static/media/README-Images/external_email.png">
+
 ***
 ***
 
@@ -73,7 +84,9 @@
 - 0 Errors
 - 0 Warnings
 
-#### Pep
+#### Pep8
+
+- All code written by myself adhired to PEP8 validaton
 
 ## Bugs / Issues and Resolutions
 

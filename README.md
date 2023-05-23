@@ -1,5 +1,7 @@
 # Coffee Now - Portfolio Project 4 - Full Stack Toolkit
 
+<img src="static/media/README-Images/responsive_view.png">
+
 ## Live site
 
 https://coffee-now-pp4.herokuapp.com/
@@ -88,7 +90,7 @@ Here at the Structure Plane, this is where I outlined the design colours, fonts 
 
 #### Colors
 
-<img src="media/README-Images/Colour-pallet.png">
+<img src="static/media/README-Images/Colour-pallet.png">
 
 The contrast between the browns, cream and greys I thought added to the theme of coffee orientated website, but in addition to this added a modern twist. 
 Light Grey was used for navbar and footer to give a bold definitive look to top and bottom with the dark brown used as the font color to add contrast and make the font stand out.
@@ -108,7 +110,7 @@ Body of the porject Oxygen font was used. This font is clean and easy to read
 
  - Allauth creates user profile and determines the depths of use within the project
 
-- Order
+- Coffee
 
     - Shows coffee products to the user
     - Depending on authentication, the user can add items to the wishlist or if admin they can add, edit and delete products
@@ -135,37 +137,37 @@ Body of the porject Oxygen font was used. This font is clean and easy to read
 
 I knew how I wanted my home page to look. Welcome text at the top for an inviting feel then blocks of text telling the user what CoffeeNow is about, the ethos and where they get their coffee from. I wanted the layout to be simple and easy for the user and not too much text as to lose the interest of the user.
 
-<img src="media/wireframes/index.html.png">
+<img src="static/media/wireframes/index.html.png">
 
-#### Order Page
+#### Coffee Page
 
 The layout of the page I wanted contained into a 3 row formation. This I thought would allow the products to be easily visible and readable. Each card would uniform in shape with the other and the layout would identical also. For a responsiveness design the products will be stacked on top of one another depending on the screen size
 
-<img src="media/wireframes/order.png">
+<img src="static/media/wireframes/order.png">
 
 #### Order Detail Page
 
 This page I wanted a more indepth description and summary of the product in question. The image will be larger to the left of the screen with title, descriptions, price and button navigations on the right of the image. For a responsiveness design, the image will appear at the top of the screen with the description and buttons following below
 
-<img src="media/wireframes/order-details.png">
+<img src="static/media/wireframes/order-details.png">
 
 #### Contact Page
 
 For the contact page, I wanted to create a simple form that was easy to understand for the user and one which allowed the user to submit only the neccessary field - name, email address and message. In addition, I wanted to add google maps function so the user could physically see the location of CoffeeNow
 
-<img src="media/wireframes/contact.png">
+<img src="static/media/wireframes/contact.png">
 
 #### Accessories Page
 
 The accessory page I felt needed to be similar to that of the order page. Firstly because of the uniformity of the website throughout but also the way in which each of the products are easily visible and readable. The responsiveness is also the same as the orde page where they are in one coloum above eachother
 
-<img scr="media/wireframes/accessories.png">
+<img scr="static/media/wireframes/accessories.png">
 
 #### Wishlist Page
 
 Whenever the user added a product to their wishlist, I wanted again to stick to the row of 3 look to keep that uniformity. The responsiveness is also the same as the orde page where they are in one coloun above eachother
 
-<img src="media/wireframes/wishlist.png">
+<img src="static/media/wireframes/wishlist.png">
 
 ***
 
@@ -177,7 +179,7 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 - Fully responsive on all screen sizes
 - Easy and clear navigation
 
-<img src="media/surface-plane-images/navbar-full-screen.png">
+<img src="static/media/surface-plane-images/navbar-full-screen.png">
 
 #### Footer
 
@@ -185,7 +187,7 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 - Fully responsive on all screens
 - Social media icons with links
 
-<img src="media/surface-plane-images/footer.png">
+<img src="static/media/surface-plane-images/footer.png">
 
 #### Home Page
 
@@ -193,15 +195,15 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 - Clear descriptuive text
 - Relevant images corrisponding to the text
 
-<img src="media/surface-plane-images/index.html-main-body.png">
+<img src="static/media/surface-plane-images/index.html-main-body.png">
 
-#### Order Page
+#### Coffee Page
 
 - Visible images showing what the product is
 - Readable text
 - Clear navigation button
 
-<img src="media/surface-plane-images/order-page.png">
+<img src="static/media/surface-plane-images/order-page.png">
 
 #### Order Detail Page
 
@@ -209,14 +211,14 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 - More in-depth description of the chosen product
 - Clear navigations buttons
 
-<img src="media/surface-plane-images/order-details-page.png">
+<img src="static/media/surface-plane-images/order-details-page.png">
 
 #### WishList Page
 
 - Visible layout on what the user has added
 - The ability to delete individual porducts
 
-<img src="media/surface-plane-images/wishlist.html.png">
+<img src="static/media/surface-plane-images/wishlist.html.png">
 
 ***
 
@@ -251,6 +253,15 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 - Gitpod
 - Google Developer Tools
 - Balsamiq
+- SweetAlert
+
+***
+
+## Browsers Used to view website
+
+- Chrome
+- Firefox
+- Safari
 
 ***
 
@@ -321,3 +332,9 @@ To create a clone you do the following;
 - The styling format came from the Bootstrap library throughout the website. This is in the from of navigation bar, collapsed navigation bar, cards for all products, button designs and froms 
 
 (https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+
+#### SweetAlert
+
+- This was a new framework I sourced in order to provide a more friendly user experience for pop up messages.
+
+(<https://sweetalert.js.org/docs/>)
