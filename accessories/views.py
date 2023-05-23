@@ -30,8 +30,8 @@ def add_product_b(request):
             return redirect('coffee_accessories')
         else:
             messages.error(
-                request,
-                'Error adding product, please check the the form is valid') 
+                requst,
+                'Error adding product, please check the the form is valid')
     return render(request, 'add_product_b.html', {'form': form})
 
 
@@ -59,7 +59,7 @@ def edit_product_b(request, accessory_id):
     context = {
         'form': form,
         'accessory': accessory
-    }  
+    }
     return render(request, 'edit_product_b.html', context)
 
 

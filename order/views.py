@@ -43,8 +43,9 @@ def add_product(request):
             messages.success(request, 'Product added successfully.')
             return redirect('coffee_list')
         else:
-            messages.error(request,
-            'Error adding product. Please check if the form is valid.')
+            messages.error(
+                request,
+                'Error adding product. Please check if the form is valid.')
     return render(request, 'add_product.html', {'form': form})
 
 
@@ -68,21 +69,20 @@ def edit_product(request, coffee_id):
                 'Error adding product, please check the the form is valid')
     else:
         form = BeanForm(instance=coffee)
-    
     context = {
         'form': form,
         'coffee': coffee
     }
-       
     return render(request, 'edit_product.html', context)
 
 
 @login_required
 def order_delete_product(request, coffee_id):
     """
-    This function only allows admin users to be able to delete a product from the
-    coffee product lise
+    This function only allows admin users to be able to delete a product from
+    the coffee product lise
     """
     coffee_beans = get_object_or_404(CoffeeBean, id=coffee_id)
     coffee_beans.delete()
     return redirect('coffee_list')
+    

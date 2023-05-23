@@ -17,9 +17,6 @@ def contact(request):
         name = request.POST['name']
         email = request.POST['email']
         message = request.POST['message']
-        print("This is name:", name)
-        print("This is message:", message)
-        print("This is email:", email)
 
         send_mail(
             'Contact Form Submission from {}'.format(name + ', ' + email),
@@ -28,7 +25,8 @@ def contact(request):
             ['coffeenowCI23@gmail.com'],
             fail_silently=False,
         )
-        
-        messages.success(request, 'Thank you for submitting! Someone will be in touch!')
+        messages.success(
+            request,
+            'Thank you for submitting! Someone will be in touch!')
 
     return render(request, 'contact.html')
