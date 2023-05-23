@@ -73,6 +73,8 @@
 - 0 Errors
 - 0 Warnings
 
+#### Pep
+
 ## Bugs / Issues and Resolutions
 
 - Fix - Corrected bootstrap class to all dropdown navbar to work
@@ -91,3 +93,17 @@
     As i have used googles smtp server to send details of the contact form to an external email, it meant i had to leave the from email as the email i am sending this to. 
     Resolution - To be able to see the users email address in the email, I changed the email part of the model to Charfield and added that information to the title of the email - "'Contact Form Submission from {}'.format(name + ', ' + email),"
 
+- FIX - static file root in base.html
+    On deployment I had issue with static files loading through heroku.
+    Resolution - Went through my settings.py file, reordered the installed apps and then in my base.html I rewrote css link to "link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css"
+
+- FIX - Index.html images were not showing
+    The images were not showing usin gthe file path: "{{ MEDIA_URL }}coffee-farm.jpg" alt="coffee"
+    Resolution - Ammend file path to "{% static 'media/coffee-farm.jpg' %}" and added load static tag to the top of the page
+
+- FIX - Updated file paths that would allow user to delete a product.
+    I had a bug where accessory page was using the order delete function and visa versa, so when one was changed then the other would have a problem.
+    Resolution - I renamed the functions in both app to be more unique to each function. In addition I renamed the ids being used to be more unique as well. With that the url paths were updated to match that of the view.py function.
+
+- FIX - When submitting the contact form after idding in SWeetAlert2 to match the same pop up as in other parts of the website, the    page  ran to a 504 error due to timeout as the way the function was written was not being achieved.
+    Resolution - After each stage of the function in the contact views.py file, I added print statement to show where the function was not being executed. It was the message.success part that was failing. To fix this I put the sweetalert script tag in the correct place above the script pop up function in the contact.html page. By doing this it meant the page loads the information from the tag to run both functions. 
