@@ -145,7 +145,7 @@ The layout of the page I wanted contained into a 3 row formation. This I thought
 
 <img src="static/media/wireframes/order.png">
 
-#### Order Detail Page
+#### Coffee Detail Page
 
 This page I wanted a more indepth description and summary of the product in question. The image will be larger to the left of the screen with title, descriptions, price and button navigations on the right of the image. For a responsiveness design, the image will appear at the top of the screen with the description and buttons following below
 
