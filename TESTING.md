@@ -84,6 +84,11 @@
 - 0 Errors
 - 0 Warnings
 
+#### Jshint
+
+- One undefined variable and two unused variables due to function being used for google maps api
+- Swal is an undefined variable as this is being used for SweetAlert
+
 #### Pep8
 
 - All code written by myself adhired to PEP8 validaton
