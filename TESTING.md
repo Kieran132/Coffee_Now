@@ -63,7 +63,7 @@
 - On adding and deleting product to wishlist, Pop up messages successfully appear with correct message
 - Contact form pop up message successfully appear upon submit button
 
-#### External Email 
+#### External Email
 
 - On submitting the contact form, the information is successfully sent to an external gmail account using smtp server
 

@@ -47,12 +47,6 @@ label {
     display: flex;
 }
 
-.navbar-dark .navbar-nav .active>.nav-link {
-    color: #3F2929;
-    text-decoration: none;
-
-}
-
 .navbar-dark .navbar-nav .coffee-nav-link {
     color: #3F2929;
 }
@@ -80,13 +74,14 @@ label {
     font-size: 20px;
 }
 
-.footer-social li a {
+.footer-social .fab:hover {
     color: #3F2929;
 }
 
-.list-inline a:hover {
-    text-decoration: none;
+.footer-social:hover {
+    color: #BFBFBF;
 }
+
 
 .coffee-footer {
     background-color: #BFBFBF;

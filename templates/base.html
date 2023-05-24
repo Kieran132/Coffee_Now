@@ -25,16 +25,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav-item navbar-nav ml-auto">
-                    <li class="nav-item {% if request.path == '/' %}active{% endif %}">
+                    <li class="nav-item ">
                         <a class="nav-link coffee-nav-link" href="{% url 'index'%}">Home</a>
                     </li>
-                    <li class="nav-item {% if request.path == '/menu/' %}active{% endif %}">
+                    <li class="nav-item">
                         <a class="nav-link coffee-nav-link" href="{% url 'coffee_list'%}">Coffee</a>
                     </li>
-                    <li class="nav-item {% if request.path == '/menu/' %}active{% endif %}">
+                    <li class="nav-item">
                         <a class="nav-link coffee-nav-link" href="{% url 'coffee_accessories' %}">Accessories</a>
                     </li>
-                    <li class="nav-item {% if request.path == '/contact/' %}active{% endif %}">
+                    <li class="nav-item">
                         <a class="nav-link coffee-nav-link" href="{% url 'contact' %}">Contact Us</a>
                     </li>
                     {% if user.is_authenticated %}
