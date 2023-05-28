@@ -32,7 +32,7 @@
                         {% if request.user.is_superuser %}
                         <a class="btn btn-sm btn-outline-secondary acc-btn"
                             href="{% url 'edit_product_b' accessory.id %}">Edit</a>
-                        <a class="btn btn-sm btn-outline-secondary acc-btn" id="acc-delete-btn"
+                        <a class="btn btn-sm btn-outline-secondary acc-btn"
                             href="{% url 'delete_product' accessory.id %}">Delete</a>
                         {% endif %}
                         <small class="text-muted acc-price">£{{ accessory.price }}</small>
@@ -43,10 +43,4 @@
         {% endfor %}
     </div>
 </div>
-<script>
-    const submitBtn = document.querySelector('#acc-delete-btn');
-    submitBtn.addEventListener('click', (event) => {
-        alert('Product Deleted!');
-    });
-</script>
 {% endblock %}

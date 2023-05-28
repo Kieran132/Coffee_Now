@@ -35,16 +35,10 @@
             {% if request.user.is_superuser %}
             <a class="btn btn-sm btn-outline-secondary coffee-detail-btn"
                 href="{% url 'edit_product' coffee.id %}">Edit</a>
-            <a class="btn btn-sm btn-outline-secondary coffee-detail-btn" id="delete-btn"
+            <a class="btn btn-sm btn-outline-secondary coffee-detail-btn"
                 href="{% url 'order_delete_product' coffee.id %}">Delete</a>
             {% endif %}
         </div>
     </div>
 </div>
-<script>
-    const submitBtn = document.querySelector('#delete-btn');
-    submitBtn.addEventListener('click', (event) => {
-        alert('Product Deleted!');
-    });
-</script>
 {% endblock %}
