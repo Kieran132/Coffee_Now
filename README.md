@@ -4,30 +4,31 @@
 
 ## Live site
 
-https://coffee-now-pp4.herokuapp.com/
+<https://coffee-now-pp4.herokuapp.com/>
 
 ## Repository
 
-https://github.com/Kieran132/Coffee_Now
+<https://github.com/Kieran132/Coffee_Now>
 
 ## Contents
+
 - Project Goals
 - UXD - User Experience Design
 - Existing Features
-    - Home Page
-    - Order
-    - Accessories
-    - Contact
-    - Wishlist
-    - Sign Up
-    - Log In
-    - Log Out
+  - Home Page
+  - Order
+  - Accessories
+  - Contact
+  - Wishlist
+  - Sign Up
+  - Log In
+  - Log Out
 - Technologies Used
 - Testing
 - Deployment
 - Credits
 
-***
+---
 
 ## Project Goals
 
@@ -35,26 +36,26 @@ Coffee Now is my fourth project as part of the Code Institute Full Stack Web Dev
 
 The idea behind this project was to combine basic CRUD (Create, Read, Update, Delete) with a functioning website that allows different levels of authorised user to be able to do certain tasks within the project. The technolgies used within this project are; HTML, CSS, Javascript, Python and Django. Within this project I wanted to create a modern, sleek designed, interactive platform that allows any user to view the products and be able to find contact information. In addition, allow authenticated users to add items to their wishlist. Going further, allowing admin the ability to create, read, update and delete products without the use of the admin panel.
 
-***
+---
 
 ## UXD - User Experience Design
 
 When designing and creating this project it was important to keep the user experience at the forefront of everything. This was achieved by breaking the project down into 5 planes;
 
 - The Strategy Plane
-- The Scope Plane 
+- The Scope Plane
 - The Structure Plane
 - The Skeleton Plane
 - The Surface Plane
 
-***
+---
 
 ## Strategy Plane
 
 In this deisgn phase, I defined my initial outcomes in product objectives and also the user needs. From the beginning I knew that the website I create needed to be clean looking, modern, easy to use, clear to use and visually appealing to the user.
 
 <u> Prodject Objectives </u>
- 
+
 - Working an operational website
 - The use of CRUD functionality
 - Clean, modern and sleek design
@@ -66,7 +67,7 @@ In this deisgn phase, I defined my initial outcomes in product objectives and al
 - Simple and easy navigation
 - Clear direction on how to use the website
 
-***
+---
 
 ## Scope Plane
 
@@ -82,7 +83,7 @@ Within the Scope Place, I defined the features that I think would be best suited
 - Wishlist page
 - Different levels of authorisation accessibility
 
-***
+---
 
 ## Structure Plane
 
@@ -92,7 +93,7 @@ Here at the Structure Plane, this is where I outlined the design colours, fonts 
 
 <img src="static/media/README-Images/Colour-pallet.png">
 
-The contrast between the browns, cream and greys I thought added to the theme of coffee orientated website, but in addition to this added a modern twist. 
+The contrast between the browns, cream and greys I thought added to the theme of coffee orientated website, but in addition to this added a modern twist.
 Light Grey was used for navbar and footer to give a bold definitive look to top and bottom with the dark brown used as the font color to add contrast and make the font stand out.
 The seasalt is used as an off white background color throughout the website.
 The dark grey is used as color for the thematic break within the project.
@@ -108,28 +109,28 @@ Body of the porject Oxygen font was used. This font is clean and easy to read
 
 - User Autehntication
 
- - Allauth creates user profile and determines the depths of use within the project
+- Allauth creates user profile and determines the depths of use within the project
 
 - Coffee
 
-    - Shows coffee products to the user
-    - Depending on authentication, the user can add items to the wishlist or if admin they can add, edit and delete products
+  - Shows coffee products to the user
+  - Depending on authentication, the user can add items to the wishlist or if admin they can add, edit and delete products
 
 - Accessories
 
-    - Shows accessory products to the user
-    - Depending on authentication, the user can add items to the wishlist or if admin they can add, edit and delete products
+  - Shows accessory products to the user
+  - Depending on authentication, the user can add items to the wishlist or if admin they can add, edit and delete products
 
 - Contact
 
- - Shows user contact form which submits the form to the terminal
+- Shows user contact form which submits the form to the terminal
 
 - Wishlist
 
-    - Combines both order and accessories model for the authenticated user to see
-    - These products can be deleted from the page by the user
+  - Combines both order and accessories model for the authenticated user to see
+  - These products can be deleted from the page by the user
 
-***
+---
 
 ## Skeleton Plane
 
@@ -169,7 +170,7 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 
 <img src="static/media/wireframes/wishlist.png">
 
-***
+---
 
 ## Surface Plane
 
@@ -220,30 +221,40 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 
 <img src="static/media/surface-plane-images/wishlist.html.png">
 
-***
+---
+
+## Future Updates and Improvements
+
+- Addthe ability for user to purchase the items
+- Search feature
+- Sorting feature for each page
+- Enable the user to build and tailored profile
+
+---
 
 ## Technologies Used
 
 - Python
-    - asgiref==3.6.0
-    - backports.zoneinfo;python_version<"3.9"
-    - cloudinary==1.32.0
-    - dj-database-url==0.5.0
-    - dj3-cloudinary-storage==0.0.6
-    - Django==3.2.18
-    - django-allauth==0.54.0
-    - django-summernote==0.8.20.0
-    - gunicorn==20.1.0
-    - oauthlib==3.2.2
-    - Pillow==9.4.0
-    - psycopg2==2.9.5
-    - PyJWT==2.6.0
-    - python3-openid==3.2.0
-    - pytz==2023.3
-    - requests-oauthlib==1.3.1
-    - sqlparse==0.4.3
+  - asgiref==3.6.0
+  - backports.zoneinfo;python_version<"3.9"
+  - cloudinary==1.32.0
+  - dj-database-url==0.5.0
+  - dj3-cloudinary-storage==0.0.6
+  - Django==3.2.18
+  - django-allauth==0.54.0
+  - django-summernote==0.8.20.0
+  - gunicorn==20.1.0
+  - oauthlib==3.2.2
+  - Pillow==9.4.0
+  - psycopg2==2.9.5
+  - PyJWT==2.6.0
+  - python3-openid==3.2.0
+  - pytz==2023.3
+  - requests-oauthlib==1.3.1
+  - sqlparse==0.4.3
+  - urllib3==1.26.15
 - HTML
-- CSS 
+- CSS
 - Bootstrap
 - Javascript
 - Google Fonts
@@ -255,7 +266,7 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 - Balsamiq
 - SweetAlert
 
-***
+---
 
 ## Browsers Used to view website
 
@@ -263,7 +274,7 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 - Firefox
 - Safari
 
-***
+---
 
 ## Testing
 
@@ -271,24 +282,29 @@ Please click the link below to see the testing document
 
 [Testing](/TESTING.md)
 
-***
+---
 
 ## Deployment
 
 ### Github Deployment
+
 The website was delpoyed using GitHub. To do this I did the following;
+
 1. When on the websites GitHub repository, click on the settings tab
 2. Now on the settings page, on the left hand side of the page, click on the pages tab
 3. Under the Source section, click on the drop down menu titled Branch and select main
 4. The page is now published with a link available to use.
 
-(https://github.com/Kieran132/Coffee_Now)
+(<https://github.com/Kieran132/Coffee_Now>)
 
 ### Creating a Fork or Copying
+
 To clone/fork/copy the repository you click on the fork tab which is situated next to unwatch tab in the top right corner of the page
 
 ### Clone
+
 To create a clone you do the following;
+
 1. Click on the code tab, left of the Gitpod tab
 2. To the right of the repository name, click the clipboard icon
 3. In the IED open GitBash
@@ -297,26 +313,28 @@ To create a clone you do the following;
 6. Clone has been created
 
 ### Repositroy deployment via Heroku
-- On the https://dashboard.heroku.com/apps page, click New and then select Create New App from the drop-down menu.
+
+- On the <https://dashboard.heroku.com/apps> page, click New and then select Create New App from the drop-down menu.
 - When the next page loads insert the App name and Choose a region. The click Create app
 - In the settings tab click on Reveal Config Vars and add the key Port and the value 8000. There were no credentials required for this app.
 - Below this click Add buildpack and choose python and nodejs in that order.
 
 #### Deployment of the app
+
 - Click on the Deploy tab and select Github-Connect to Github.
 - Enter the repository name and click Search.
 - Choose the repository that holds the correct files and click Connect.
 - A choice is offered between manual or automatic deployment whereby the app is updated when changes are pushed to GitHub.
 - Once the deployment method has been chosen the app will be built and can be launched by clicking the Open app button at the top of the page.
 
-***
+---
 
 ## Credits
 
 #### Products
 
-- All the products on the order page came from Round Hill Roastary Website (https://roundhillroastery.com/shop/product/isabel-1-anaerobic/)
-- All products on the accessory page came from Origin Coffee Website (https://www.origincoffee.co.uk/products/kalita-filter-papers)
+- All the products on the order page came from Round Hill Roastary Website (<https://roundhillroastery.com/shop/product/isabel-1-anaerobic/>)
+- All products on the accessory page came from Origin Coffee Website (<https://www.origincoffee.co.uk/products/kalita-filter-papers>)
 
 #### Code
 
@@ -325,13 +343,13 @@ To create a clone you do the following;
 
 #### Django Documentation
 
-- Any issues involving django, I referenced their online documentation to guide me through step by step (https://docs.djangoproject.com/en/4.2/)
+- Any issues involving django, I referenced their online documentation to guide me through step by step (<https://docs.djangoproject.com/en/4.2/>)
 
 #### Bootstrap
 
-- The styling format came from the Bootstrap library throughout the website. This is in the from of navigation bar, collapsed navigation bar, cards for all products, button designs and froms 
+- The styling format came from the Bootstrap library throughout the website. This is in the from of navigation bar, collapsed navigation bar, cards for all products, button designs and froms
 
-(https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+(<https://getbootstrap.com/docs/5.3/getting-started/introduction/>)
 
 #### SweetAlert
 
