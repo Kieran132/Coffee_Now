@@ -225,7 +225,7 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 
 ## Future Updates and Improvements
 
-- Addthe ability for user to purchase the items
+- Add the ability for user to purchase the items
 - Search feature
 - Sorting feature for each page
 - Enable the user to build and tailored profile
