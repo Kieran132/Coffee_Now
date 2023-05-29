@@ -229,6 +229,7 @@ Whenever the user added a product to their wishlist, I wanted again to stick to 
 - Search feature
 - Sorting feature for each page
 - Enable the user to build and tailored profile
+- For Admin useability, I would like to have added a delete pop up message
 
 ---
 
