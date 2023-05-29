@@ -2,11 +2,7 @@
 {% block content %}
 <h1 class="text-center mb-4">Contact Us</h1>
 <hr>
-{% if message_sent %}
-<div class="alert alert-success" role="alert">
-    Your message has been sent!
-</div>
-{% endif %}
+<!-- Form for user to send contact message to enternal email-->
 <form method="POST" action="{% url 'contact' %}" id="contact-form">
     {% csrf_token %}
     <div class="form-group">
@@ -28,6 +24,7 @@
 <div class="container">
     <div id="map"></div>
 </div>
+<!-- Sweet Alert pop up message-->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
 <script>
     {% if messages %}
@@ -44,6 +41,7 @@
     {% endfor %}
     {% endif %}
 </script>
+<!-- Google Maps-->
 <script>
     function initMap() {
         const uluru = {

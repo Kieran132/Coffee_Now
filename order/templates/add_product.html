@@ -3,6 +3,7 @@
 <div class="container">
     <h1 class="text-center mb-4">Add a new product</h1>
     <hr>
+    <!-- Form to add products-->
     <form method="post" action="{% url 'add_product' %}" enctype="multipart/form-data">
         {% csrf_token %}
         <div class="row mb-3">
@@ -54,6 +55,7 @@
         </div>
     </form>
 </div>
+<!-- Message pop up upon submitting form-->
 <script>
     const submitBtn = document.querySelector('#submit-btn');
     submitBtn.addEventListener('click', (event) => {

@@ -5,10 +5,12 @@
     <div class="row">
         <div class="col-md-6">
             {% if coffee.image %}
+            <!-- Product Image -->
             <a>
                 <img class="card-img-top coffee-detail-img" src="{{ coffee.image.url }}" alt="{{ coffee.name }}">
             </a>
             {% else %}
+            <!-- Default Product Image -->
             <a>
                 <img class="card-img-top img-fluid coffee-detail-img" src="{% static 'media/coffee.jpg' %}"
                     alt=" {{ coffee.name }}">
@@ -16,23 +18,32 @@
             {% endif %}
         </div>
         <div class="col-md-6">
+            <!-- Product Name -->
             <h1 class="coffee-detail-title">{{ coffee.name }}</h1>
             <hr>
+            <!-- Product Description -->
             <p>{{ coffee.description }}</p>
             <h3 class="coffee-detail-sml-title">Details:</h3>
             <ul class="list-unstyled">
+                <!-- Roast Level of coffee bean -->
                 <li><strong>Roasting Level:</strong> {{ coffee.roasting_level }}</li>
+                <!-- Flavour level of coffee bean -->
                 <li><strong>Flavor Profile:</strong> {{ coffee.flavor_profile }}</li>
+                <!-- Strength Level of coffee bean -->
                 <li><strong>Strength Level:</strong> {{ coffee.strength_level }}</li>
+                <!-- Product Price -->
                 <li><strong>Price:</strong> £{{ coffee.price }}</li>
             </ul>
             {% if request.user.is_authenticated %}
+            <!-- Authenticated user visible button -->
             <a href="{% url 'add_coffee_to_wishlist' coffee.id %}"
                 class="btn btn-sm btn-outline-secondary coffee-detail-btn">Add to Wishlist</a>
             {% endif %}
+            <!-- Button direct User back to main product page -->
             <a href="{% url 'coffee_list' %}" class="btn btn-sm btn-outline-secondary coffee-detail-btn">Back to Coffee
                 List</a>
             {% if request.user.is_superuser %}
+            <!-- Admin visible buttons -->
             <a class="btn btn-sm btn-outline-secondary coffee-detail-btn"
                 href="{% url 'edit_product' coffee.id %}">Edit</a>
             <a class="btn btn-sm btn-outline-secondary coffee-detail-btn"

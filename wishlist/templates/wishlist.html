@@ -6,48 +6,60 @@
     <hr>
     <div class="row">
         {% for item in wishlist %}
+        <!-- Coffee product -->
         {% if item.CoffeeBean %}
         <div class="col-md-4 wish-box-sm">
             <div class="card mb-4 box-shadow wish-box">
                 {% if item.CoffeeBean.image %}
+                <!-- Coffee product image -->
                 <a>
                     <img class="card-img-top wish-img" src="{{ item.CoffeeBean.image.url }}"
                         alt="{{ item.CoffeeBean.name }}">
                 </a>
                 {% else %}
+                <!-- Coffee product default image -->
                 <a>
                     <img class="card-img-top wish-img " src="{% static 'media/coffee.jpg' %}"
                         alt=" {{ item.CoffeeBean.name }}">
                 </a>
                 {% endif %}
                 <div class="card-body wish-body">
+                    <!-- Coffee product name -->
                     <h5 class="card-title wish-name">{{ item.CoffeeBean.name }}</h5>
                     <hr>
+                    <!-- Coffee product price -->
                     <small class="text-muted wish-price">£{{ item.CoffeeBean.price }}</small>
                     <hr>
+                    <!-- Authenticated user button -->
                     <a class="btn btn-sm btn-outline-secondary" href="{% url 'wishlist-delete' item.id %}">Delete</a>
                 </div>
             </div>
         </div>
         {% elif item.Accessory %}
+        <!-- Accerssory Product -->
         <div class="col-md-4 wish-box-sm">
             <div class="card mb-4 box-shadow wish-box">
+                <!-- Accerssory Product Image -->
                 {% if item.Accessory.image %}
                 <a>
                     <img class="card-img-top wish-img" src="{{ item.Accessory.image.url }}"
                         alt="{{ item.Accessory.name }}">
                 </a>
                 {% else %}
+                <!-- Accerssory Product Default image -->
                 <a>
                     <img class="card-img-top wish-img " src="{% static 'media/coffee.jpg' %}"
                         alt=" {{ item.Accessory.name }}">
                 </a>
                 {% endif %}
                 <div class="card-body wish-body">
+                    <!-- Accerssory Product Name -->
                     <h5 class="card-title wish-name">{{ item.Accessory.name }}</h5>
                     <hr>
+                    <!-- Accerssory Product Price -->
                     <small class="text-muted wish-price">£{{ item.Accessory.price }}</small>
                     <hr>
+                    <!-- Authenticated User button -->
                     <a class="btn btn-sm btn-outline-secondary" href="{% url 'wishlist-delete' item.id %}">Delete</a>
                 </div>
             </div>
@@ -56,6 +68,7 @@
         {% endfor %}
     </div>
 </div>
+<!-- Sweet Alert pop up messages -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
 <script>
     {% if messages %}

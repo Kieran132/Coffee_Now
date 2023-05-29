@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
+<!-- Form to add products-->
 <h1>Add a new product</h1>
 <form method="post" action="{% url 'add_product_b' %}" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit" id="submit-btn" class="btn btn-sm btn-outline-secondary">Add Product</button>
 </form>
+<!-- Message pop up upon submitting form-->
 <script>
     const submitBtn = document.querySelector('#submit-btn');
     submitBtn.addEventListener('click', (event) => {
