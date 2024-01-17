@@ -1,1 +1,1 @@
-web: gunicorn coffeenow.wsgi
+web: gunicorn tussock.wsgi
